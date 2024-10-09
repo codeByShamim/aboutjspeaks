@@ -82,24 +82,7 @@ thumbnail2.addEventListener('click', function() {
   playVideo(video2, thumbnailContainer); // Play video 2 when the button is clicked
 });
 
-
-  // gallery modal control here**********************************************************
-  function openModal(modalId) {
-    document.getElementById(modalId).style.display = "block";
-  }
-
-  function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
-  }
-  // Close the modal if the user clicks anywhere outside of the modal content
-  window.onclick = function(event) {
-    var modals = document.getElementsByClassName("modal");
-    for (var i = 0; i < modals.length; i++) {
-      if (event.target == modals[i]) {
-        modals[i].style.display = "none";
-      }
-    }
-  }
+  
   // Accordion section JavaScript*******************************************************
   var acc = document.getElementsByClassName("accordion");
   var panels = document.getElementsByClassName("panel");

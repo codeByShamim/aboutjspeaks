@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #FF6600; /* Main color */
+    --secondary-color: #FF8C00; /* Secondary color */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-video {
+    flex: 70%;
+    padding-right: 20px;
+}
+
+.video-thumbnail {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.video-title {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.video-description {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.video-questions {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
+.video-questions li {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 10px; /* Space between items */
+    padding: 10px; /* Add padding for better touch target */
+    background-color: #f9f9f9; /* Light background for better contrast */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.time {
+    font-weight: bold; /* Bold for emphasis */
+    margin-right: 15px; /* Space between time and text */
+    color: var(--primary-color); /* Use your primary color */
+    min-width: 60px; /* Fixed width for time to align items */
+}
+
+.question {
+    flex: 1; /* Allow the question to take up remaining space */
+    color: #333; /* Darker color for readability */
+}
+
+.main-video a{
+    text-decoration: none;
+    color: white;
+}
+
+.watch-now {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px; /* Space above button */
+    text-decoration: none;
+}
+
+.sidebar {
+    flex: 30%;
+}
+
+.sidebar h3 {
+    font-size: 20px;
+    margin: 20px 0 10px;
+}
+
+.related-videos {
+    display: flex;
+    flex-direction: column;
+}
+
+.related-video {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.related-thumbnail {
+    width: 80px; /* Set a fixed width for uniformity */
+    height: 60px; /* Set a fixed height for uniformity */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Spacing to the right */
+    object-fit: cover; /* Maintain aspect ratio without stretching */
+}
+
+
+.related-title {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.related-title:hover {
+    text-decoration: underline;
+}
+
+.guest-profile {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+h3 {
+    color: var(--primary-color); /* Use primary color for headings */
+    text-align: center; /* Center the main heading */
+    margin-bottom: 20px;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column; /* Stack profiles vertically */
+    gap: 15px; /* Space between profiles */
+}
+
+.profile-item {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1; /* Light background for each profile */
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.profile-item:hover {
+    background-color: #e0e0e0; /* Highlight on hover */
+}
+
+.profile-thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    border: 2px solid var(--primary-color); /* Border for profile images */
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.guest-name {
+    font-size: 1.4em;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.guest-bio {
+    margin-top: 5px;
+    color: #555;
+    font-size: 0.9em; /* Slightly smaller font for bio */
+}
+
+.social-media {
+    margin-top: 20px;
+    text-align: center; /* Center the social media section */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center icons */
+    gap: 15px; /* Space between icons */
+}
+
+.social-icon {
+    font-size: 26px; /* Slightly larger icon size */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-icon.instagram {
+    color: #E4405F;
+}
+
+.social-icon.facebook {
+    color: #3b5998;
+}
+
+.social-icon.linkedin {
+    color: #0077B5;
+}
+
+.social-icon.website {
+    color: #000;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Enlarge on hover */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;                                                                                                                                                                                                                                                                                                                                                                                                         
+    }
+
+    .main-video {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .sidebar {
+        flex: 100%;
+    }
+
+    .guest-profile {
+        margin-top: 15px; /* Adjust spacing for mobile */
+    }
+
+    .profile-thumbnail {
+        width: 70px; /* Adjust for smaller screens */
+        height: 70px;
+    }
+
+    .guest-name {
+        font-size: 1.1em; /* Slightly smaller name on mobile */
+    }
+
+    .video-title {
+        font-size: 20px; /* Adjust for smaller screens */
+    }
+
+    .video-description {
+        font-size: 14px; /* Adjust for smaller screens */
+    }
+}
