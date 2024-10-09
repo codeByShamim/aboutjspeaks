@@ -1,0 +1,158 @@
+/* Album Section Styles */
+#album-section {
+    max-width: 1400px;
+    margin: auto;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.albums {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+}
+
+.album {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.album:hover {
+    background: #f0f0f0;
+}
+
+.album-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.album-images img {
+    width: 200px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.881); /* Black with some transparency */
+    z-index: 998; /* Below the modal */
+    display: none; /* Initially hidden */
+}
+
+/* Gallery Styles */
+.gallery {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the gallery */
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background for better contrast */
+    color: white;
+    padding: 20px;
+    overflow-y: hidden;
+    display: none; /* Initially hidden */
+    flex-direction: column; /* Stack children vertically */
+    width: 90%; /* Set the width to 90% */
+    max-height: 90%; /* Limit height */
+    z-index: 999; /* Above the overlay */
+    border-radius: 8px; /* Optional: add some rounding */
+}
+/* Other styles remain unchanged */
+
+
+/* Close Button */
+.close-btn {
+    cursor: pointer;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+/* Big Image */
+.big-image {
+    position: relative; /* Position relative for absolute positioning of buttons */
+    text-align: center;
+    margin-bottom: 10px; /* Space below the big image */
+}
+
+
+/* Big image styles */
+.big-image img {
+    max-width: 100%; /* Ensure the big image takes full width */
+    max-height: 80%; /* Limit height to keep it responsive */
+    border: 2px solid white; /* Optional border */
+}
+/* Thumbnails below the big image */
+.gallery-images {
+    display: flex;
+    justify-content: center; /* Center thumbnails */
+    gap: 10px; /* Space between thumbnails */
+    flex-wrap: wrap; /* Allow thumbnails to wrap */
+    margin-top: 10px; /* Gap above thumbnails */
+}
+
+.gallery-images img {
+    width: 60px; /* Thumbnail size */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.3s;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Navigation Styles */
+.navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 40px; /* Default font size for larger screens */
+    cursor: pointer;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 15px; /* Increased padding for better click area */
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: background 0.3s, transform 0.2s; /* Smooth transitions */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.navigation.left {
+    left: 10px; /* Position left navigation inside big image */
+}
+
+.navigation.right {
+    right: 10px; /* Position right navigation inside big image */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .albums {
+        grid-template-columns: 1fr; /* Stack albums in one column on smaller screens */
+    }
+
+    .big-image img {
+        max-width: 90%; /* Larger image on smaller screens */
+    }
+
+    .gallery-images img {
+        width: 50px; /* Smaller thumbnails on smaller screens */
+    }
+
+    .navigation {
+        font-size: 24px; /* Smaller font size for navigation icons */
+        padding: 5px 10px; /* Reduced padding for a tighter button */
+    }
+}
