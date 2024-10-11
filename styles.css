@@ -251,7 +251,7 @@ html {
 /* header section style start here */
 #header-wrapper {
 	position: relative;
-	background-image: url(./assets/header-bg2.jpeg);
+	background-image: url(./assets/header-bg.jpeg);
 	background-size: cover;
 }
 

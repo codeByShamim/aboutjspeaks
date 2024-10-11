@@ -1,5 +1,5 @@
 const albums = {
-    album1: ['../assets/g1.png', '../assets/g2.png', '../assets/g3.png'],
+    album1: ['../assets/pl07t07.jpg', '../assets/al01img01.jpg', '../assets/al01img02.jpg'],
     album2: ['../assets/g1.png', '../assets/g2.png', '../assets/g3.png'],
     album3: ['../assets/g1.png', '../assets/g2.png', '../assets/g3.png'],
     album4: ['../assets/g2.png', '../assets/g1.png', '../assets/g3.png']
