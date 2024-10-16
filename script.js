@@ -12,17 +12,22 @@ if (playlistDiv.style.display === "none" || playlistDiv.style.display === "") {
 
 
 
-  //  navbar toggle btn control here***********************************************
-  const toggleBtn = document.getElementById('toggle-btn');
-  const navContent = document.querySelector('.nav-content');
-  toggleBtn.addEventListener('click', () => {
-    if (navContent.style.display === 'none' || navContent.style.display === '') {
-      navContent.style.display = 'block';
-    } else {
-      navContent.style.display = 'none';
-    }
-  });
+const toggleBtn = document.getElementById('toggle-btn');
+const navContent = document.querySelector('.nav-content');
+const barsIcon = toggleBtn.querySelector('.fa-bars');
+const xIcon = toggleBtn.querySelector('.fa-x');
 
+toggleBtn.addEventListener('click', () => {
+  if (navContent.style.display === 'none' || navContent.style.display === '') {
+    navContent.style.display = 'block';
+    barsIcon.style.display = 'none';
+    xIcon.style.display = 'block';
+  } else {
+    navContent.style.display = 'none';
+    barsIcon.style.display = 'block';
+    xIcon.style.display = 'none';
+  }
+});
 
 // video play btn for focus section video********************
 // Function to play a video and hide its thumbnail
