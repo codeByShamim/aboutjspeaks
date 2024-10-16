@@ -540,7 +540,9 @@ html {
 	margin-bottom: 50px;
 	display: inline-block;
 	color: var(--primary-color);
+	text-align: left;
 }
+
 #video-section {
 	max-width: 1400px;
 	display: -webkit-box;
@@ -555,6 +557,10 @@ html {
 	margin: auto;
 	margin-top: 50px;
 }
+#video-section h2{ 
+	text-align: left;
+	
+}
 
 .video-thumbnail {
 	width: 50%;
@@ -565,10 +571,19 @@ html {
 	margin: 20px;
 }
 
-.video-content p {
-	text-align: justify;
+#video-section p, h3, li {
+	text-align: left;
 	font-size: 18px;
 	color: #7f8787;
+}
+#video-section p{
+	text-align: justify;
+}
+.video-content li{
+	background-color: rgba(211, 211, 211, 0.347);
+	margin: 5px;
+	padding: 5px;
+	list-style:decimal;
 }
 
 .watch-btn {
@@ -753,19 +768,23 @@ video {
 	/* Margin for spacing */
 	font-size: 1.2em;
 	color: #333;
+	text-align: left;
 	/* Dark color for title */
 }
 
 .gallery-details button {
 	text-decoration: none;	
-	color: var(--primary-color);
-	border: 1px solid var(--primary-color);
 	padding: 5px 10px;
 	transition: 0.4s;
-}
-.gallery-details button:hover{
 	background-color: var(--primary-color);
 	color: white;
+	border: none;
+	cursor: pointer;
+}
+.gallery-details button:hover{
+	background-color: white;
+	border: 1px solid var(--primary-color);
+	color: var(--primary-color);
 }
 
 /* See More Button Container */
@@ -1398,6 +1417,7 @@ video {
 
 .contact-information h3 {
 	margin-bottom: 20px;
+	color: white;
 }
 
 .contact-information p {
@@ -1416,6 +1436,7 @@ video {
 
 .contact-information ul li {
 	margin: 10px 0;
+	color: white;
 }
 
 /* form input field */

@@ -29,6 +29,7 @@ html {
 
 .playlist-section .playlist-header {
     padding: 100px 20px;
+    text-align: center;
 }
 
 .playlist-item {
