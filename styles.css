@@ -1986,7 +1986,10 @@ input[type="email"] {
 
 	/* galery section */
 	.gallery-details h3{
-		font-size: 14px;
+		font-size: 12px;
+	}
+	.gallery-details{
+		padding: 10px 5px;
 	}
 
 	/* testimonial section */

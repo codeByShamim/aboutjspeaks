@@ -85,6 +85,7 @@
 }
 
 .section-title {
+    text-align: center;
     font-size: 2rem;
     margin-bottom: 15px;
     border-bottom: 2px solid white;
@@ -132,7 +133,7 @@
 
 .contact-section {
     margin-top: 20px;
-    text-align: center;
+    text-align: center !important;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -145,14 +146,17 @@
     color: white;
     padding: 3px 10px;
     background-color: #ff6600;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     text-transform: uppercase;
 }
 
 .contact-info {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin:auto;
 }
 
 .contact-info li {
@@ -167,7 +171,6 @@
 }
 
 .contact-info i {
-    margin-right: 10px;
     font-size: 1.3rem;
 }
 
@@ -213,6 +216,9 @@
     .team-member{
         padding: 50px 10px;
         box-shadow: none;
+    }
+    .member-bio{
+        text-align: left;
     }
     .mission-vision-wrapper {
         flex-direction: column;
