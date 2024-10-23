@@ -254,7 +254,7 @@ html {
 /* header section style start here */
 #header-wrapper {
 	position: relative;
-	background-image: url(./assets/header-bg2.jpeg);
+	background-image: url(./assets/header-bg.jpeg);
 	background-size: cover;
 }
 
@@ -1013,12 +1013,14 @@ video {
 
 /* upcoming event section style start here*/
 #upcoming-event-wrapper {
-	max-width: 1400px;
-	margin: auto;
-	padding: 2px;
+	background-color: white;
 }
 
 #upcoming-event {
+	max-width: 1400px;
+	margin: auto;
+	padding: 100px 0px;
+	background-color: white;
 	width: 100%;
 	margin-top: 150px;
 	margin-bottom: 80px;
@@ -1051,7 +1053,8 @@ video {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	padding: 0 20px;
-	margin-bottom: 100px;
+	margin: 100px 0;
+
 	overflow: hidden;
 }
 
@@ -1826,6 +1829,9 @@ input[type="email"] {
 	}
 	
 	/* events section */
+	#upcoming-event{
+		padding: 50px 0;
+	}
 	#events-collection-list {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
