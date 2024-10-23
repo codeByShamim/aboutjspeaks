@@ -1060,18 +1060,12 @@ video {
 	background-color: #012a38;
 }
 
-.event-collection:hover .event-contents h2 {
+.event-collection:hover .event-contents a {
 	color: var(--primary-color);
 	border-color: var(--primary-color);
 }
 
-.event-collection:hover .event-contents p {
-	color: var(--primary-color);
-}
 
-.event-collection:hover .event-contents h1 {
-	color: white;
-}
 
 .events-img {
 	margin-top: -1px;
@@ -1101,9 +1095,12 @@ video {
 	position: relative;
 }
 
-.event-contents h2 {
+.event-contents a {
+	display: block;
+	font-size: 22px;
+	text-decoration: none;
 	color: white;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	border-bottom: 1px solid lightgray;
 	padding-bottom: 10px;
 	-webkit-transition: 0.4s;
@@ -1121,19 +1118,7 @@ video {
 	transition: 0.4s;
 }
 
-.event-contents h1 {
-	font-size: 19px;
-	color: var(--primary-color);
-	position: absolute;
-	-webkit-transform: rotate(270deg);
-	-ms-transform: rotate(270deg);
-	transform: rotate(270deg);
-	left: -70px;
-	top: 30%;
-	-webkit-transition: 0.4s;
-	-o-transition: 0.4s;
-	transition: 0.4s;
-}
+
 
 /*qna section style start here */
 .qna-section {
