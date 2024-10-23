@@ -254,7 +254,7 @@ html {
 /* header section style start here */
 #header-wrapper {
 	position: relative;
-	background-image: url(./assets/header-bg.jpeg);
+	background-image: url(./assets/header-bg2.jpeg);
 	background-size: cover;
 }
 
@@ -1110,7 +1110,9 @@ video {
 	-o-transition: 0.4s;
 	transition: 0.4s;
 }
-
+.events-date{
+	color: var(--primary-color) !important;
+}
 .event-contents p {
 	color: white;
 	margin-bottom: 10px;
