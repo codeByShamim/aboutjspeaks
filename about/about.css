@@ -1,0 +1,589 @@
+<<<<<<< HEAD
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* Universal styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Sets a clean sans-serif font globally */
+}
+
+/* About container styles */
+.about-container {
+    max-width: 1200px;
+    margin: 50px auto; /* Centers the container with top margin */
+    padding: 0 20px; /* Adds horizontal padding */
+    text-align: center; /* Centers the text */
+}
+
+/* Team section header styles */
+.team-header {
+    margin: auto;
+    display: inline-block;
+    font-size: 2.5rem; /* Header font size */
+    color: #ff6600; /* Header color */
+    border: 1px solid rgba(128, 128, 128, 0.355);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Team member section styles */
+.team-member {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 100px;
+    padding: 50px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; Uncomment for shadow effect */
+}
+
+/* Member photo styles */
+.member-photo {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 20px;
+    position: relative;
+    border: 5px solid transparent;
+    background-image: -o-linear-gradient(white, white), 
+                      -o-linear-gradient(45deg, #ff6600, #ff9966);
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(45deg, #ff6600, #ff9966);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+/* Specific class for production team member photo */
+.procuction-photo {
+    width: 50%;
+}
+
+/* Member name styles */
+.member-name {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Orange color text helper class */
+.orange-text {
+    color: #ff6600;
+}
+
+/* Member title styles */
+.member-title {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Member bio styles */
+.member-bio {
+    font-size: 1.1rem;
+    color: #666 !important; /* !important overrides other styles */
+    margin-bottom: 20px;
+    text-align: justify; /* Justifies text in the bio */
+}
+
+/* Mission and Vision Section styles */
+.mission-vision-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: -o-linear-gradient(315deg, #ff6600, #ff9966);
+    background: linear-gradient(135deg, #ff6600, #ff9966); /* Gradient background */
+    border-radius: 12px;
+    padding: 30px;
+    color: white;
+    margin-bottom: 40px;
+    -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Box shadow for a lifted effect */
+    -webkit-animation: fadeIn 1s ease-in-out;
+            animation: fadeIn 1s ease-in-out; /* Animation on fade-in */
+}
+
+.about-mission, .about-vision {
+    width: 48%; /* Makes each section take up 48% of the container */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: black;
+}
+
+/* Text styles for mission and vision paragraphs */
+.about-mission p, .about-vision p {
+    font-size: 0.90rem;
+    line-height: 1.6;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* Light shadow for text legibility */
+}
+
+/* Quote Section styles */
+.quote-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Box shadow for a soft elevated effect */
+    -webkit-animation: fadeInUp 1s ease-in-out;
+            animation: fadeInUp 1s ease-in-out; /* Animation for fade-up */
+}
+
+/* Styles for the quote text */
+.quote-text {
+    font-size: 1.8rem;
+    font-style: italic;
+    color: #333;
+    line-height: 1.5;
+    position: relative;
+}
+
+/* Icon styles inside the quote text */
+.quote-text i {
+    color: #ff6600;
+    font-size: 2rem;
+}
+
+/* Author styling for the quote */
+.quote-author {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #ff6600;
+}
+
+/* Contact section styling */
+.contact-section {
+    margin-top: 20px;
+    text-align: center !important;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Box shadow for subtle lift */
+}
+
+/* Contact section title styles */
+.contact-title {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: white;
+    padding: 3px 10px;
+    background-color: #ff6600;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+/* Contact information styles */
+.contact-info {
+    width: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+}
+
+.contact-info li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #555;
+    -webkit-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+.contact-info li:hover {
+    color: #ff6600; /* Hover effect on the contact info */
+}
+
+.contact-info i {
+    font-size: 1.8rem; /* Icon size in contact info */
+}
+
+/* Specific icon colors for social media */
+.instagram-icon {
+    color: #E4405F; /* Instagram color */
+}
+
+.facebook-icon {
+    color: #1877F2; /* Facebook color */
+}
+
+.linkedin-icon {
+    color: #0077B5; /* LinkedIn color */
+}
+
+/* Email icon color */
+.fa-envelope {
+    color: #333333; /* Neutral dark color for email */
+}
+
+/* Animations */
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; -webkit-transform: translateY(20px); transform: translateY(20px); }
+    to { opacity: 1; -webkit-transform: translateY(0); transform: translateY(0); }
+}
+@keyframes fadeIn {
+    from { opacity: 0; -webkit-transform: translateY(20px); transform: translateY(20px); }
+    to { opacity: 1; -webkit-transform: translateY(0); transform: translateY(0); }
+}
+
+@-webkit-keyframes fadeInUp {
+    from { opacity: 0; -webkit-transform: translateY(40px); transform: translateY(40px); }
+    to { opacity: 1; -webkit-transform: translateY(0); transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; -webkit-transform: translateY(40px); transform: translateY(40px); }
+    to { opacity: 1; -webkit-transform: translateY(0); transform: translateY(0); }
+}
+
+/* Responsive Layout for small screens */
+@media (max-width: 480px) {
+    .contact-info li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-size: .80rem; /* Smaller font size for small screens */
+    }
+    .procuction-photo{
+        width: 80%; /* Makes the production photo larger on small screens */
+    }
+}
+
+/* Responsive Layout for medium screens */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px; /* Adds padding for smaller screens */
+    }
+    .team-member {
+        padding: 50px 10px;
+        -webkit-box-shadow: none;
+                box-shadow: none; /* Removes box-shadow on smaller screens */
+    }
+    .member-bio {
+        text-align: left; /* Aligns text to the left for smaller screens */
+    }
+    .mission-vision-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center; /* Stacks mission and vision sections on top of each other */
+    }
+
+    .about-mission, .about-vision {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        text-align: center; /* Centers section title */
+    }
+
+    .quote-text {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .contact-title {
+        font-size: 1.5rem; /* Larger contact section title on smaller screens */
+    }
+
+    .contact-info li {
+        font-size: 1rem; /* Adjusts font size for better readability on smaller screens */
+    }
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.team-header {
+    margin: auto;
+    display: inline-block;
+    font-size: 2.5rem; /* Header font size */
+    color: #ff6600; /* Header color */
+    border: 1px solid rgba(128, 128, 128, 0.355);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 100px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    padding: 50px;
+}
+
+.member-photo {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    position: relative;
+    border: 5px solid transparent;
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(45deg, #ff6600, #ff9966);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.procuction-photo{
+    width: 50%;
+}
+.member-name {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.orange-text {
+    color: #ff6600;
+}
+
+.member-title {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.member-bio {
+    font-size: 1.1rem;
+    color: #666 !important;
+    margin-bottom: 20px;
+    text-align: justify;
+   
+}
+
+/* Mission and Vision Section */
+.mission-vision-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #ff6600, #ff9966);
+    border-radius: 12px;
+    padding: 30px;
+    color: white;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-mission, .about-vision {
+    width: 48%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.about-mission p, .about-vision p {
+    font-size: 0.90rem;
+    line-height: 1.6;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Quote Section */
+.quote-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.quote-text {
+    font-size: 1.8rem;
+    font-style: italic;
+    color: #333;
+    line-height: 1.5;
+    position: relative;
+}
+
+.quote-text i {
+    color: #ff6600;
+    font-size: 2rem;
+}
+
+.quote-author {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #ff6600;
+}
+
+.contact-section {
+    margin-top: 20px;
+    text-align: center !important;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: white;
+    padding: 3px 10px;
+    background-color: #ff6600;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.contact-info {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin:auto;
+}
+
+.contact-info li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.contact-info li:hover {
+    color: #ff6600;
+}
+
+.contact-info i {
+    font-size: 1.3rem;
+}
+
+/* Specific icon colors */
+.instagram-icon {
+    color: #E4405F; /* Instagram color */
+}
+
+.facebook-icon {
+    color: #1877F2; /* Facebook color */
+}
+.linkedin-icon {
+    color: #0077B5; /* Facebook color */
+}
+
+/* Example for email icon if needed */
+.fa-envelope {
+    color: #333333; /* Neutral dark color for email */
+}
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Layout */
+@media (max-width: 480px) {
+    .contact-info li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: .80rem;
+    }
+    .procuction-photo{
+        width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .about-container{
+        padding: 20px;
+    }
+    .team-member{
+        padding: 50px 10px;
+        box-shadow: none;
+    }
+    .member-bio{
+        text-align: left;
+    }
+    .mission-vision-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-mission, .about-vision {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .section-title{
+        text-align: center;
+    }
+    
+
+    .quote-text {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .contact-title {
+        font-size: 1.5rem; /* Adjust title size */
+    }
+
+    .contact-info li {
+        font-size: 1rem; /* Adjust font size */
+    }
+>>>>>>> 39a4cb9ee529cf06109ca76f14b81a0778af1d20
+}

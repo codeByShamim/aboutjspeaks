@@ -1,0 +1,251 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'myFont';
+  src: url(./font/aileron.black.otf);
+}
+@font-face {
+  font-family: 'Aileron-Light';
+src: url(./font/Aileron-Light.otf);
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --primary-color: #FF6600;
+  --secondary-color: #FF8C00;
+}
+
+
+
+.playlist-section {
+  padding: 100px 0;  
+  text-align: center;
+  /* background: rgb(255,102,0);
+background: linear-gradient(0deg, rgba(255,102,0,1) 0%, rgba(255,140,0,1) 100%); */
+  background-color: var(--primary-color);
+}
+
+/* Main container styling */
+.header-container {
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out; /* Smooth fade effect */
+  text-align: center;
+  color: white; /* Brand color */
+  margin-bottom: 50px;
+  -webkit-animation: loopAnimation 9.5s infinite;
+          animation: loopAnimation 9.5s infinite; /* Loop the entire sequence */
+}
+
+/* Animated text styling */
+.header-text {
+  font-family: "Aileron-Light";
+  font-size: 6em;
+  opacity: 0;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out; /* Smooth transition */
+}
+
+/* Specific animations for each text */
+.header-text.real-people {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;  /* Starts immediately */
+  display: inline;
+}
+
+.header-text.real-conversations {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;  /* Starts after 3 seconds */
+  display: inline;
+}
+
+.header-text.jspeaks {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;  /* Starts after 6 seconds */
+  display: block;
+  font-size: 8em;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Keyframes for fade-in effect */
+@-webkit-keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    -webkit-transform: translateY(20px); 
+            transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    -webkit-transform: translateY(0); 
+            transform: translateY(0); 
+  }
+}
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    -webkit-transform: translateY(20px); 
+            transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    -webkit-transform: translateY(0); 
+            transform: translateY(0); 
+  }
+}
+
+/* Keyframes for looping the entire animation */
+@-webkit-keyframes loopAnimation {
+  0% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes loopAnimation {
+  0% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+
+.playlist-item {
+  max-width: 1400px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.playlist-item .pitem {
+  width: 23%;
+  margin: 10px;
+  padding: 5px 5px 20px 5px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative; /* Ensure video overlays properly */
+}
+
+.pitem img {
+  width: 100%;
+  z-index: 1;
+}
+
+
+
+.pitem p {
+  text-align: center;
+  margin-top: 5px;
+  padding: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.pitem a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  padding: 5px 10px;
+  margin-top: 20px;
+  color: white;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.pitem a:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+
+
+
+/* Responsive design starts here */
+@media (max-width: 769px) {
+  /* Display 3 columns between 481px and 769px */
+  .playlist-item .pitem {
+      width: 30%; /* 3 columns */
+      margin: 10px;
+  }
+  .header-text.real-people, .header-text.real-conversations {
+      font-size: 4em;
+    }
+    .header-text.jspeaks {
+      font-size: 3.5em;
+    }
+}
+
+@media (max-width: 480px) {
+  .playlist-section{
+      padding: 100px 0;
+  }
+ 
+    
+  /* Display 2 columns for screens under 480px */
+  .playlist-item .pitem {
+      width: 48%; /* 2 columns */
+      margin: 10px 1%;
+  }
+
+  .header-text.real-people, .header-text.real-conversations {
+      font-size: 2.2em;
+      display: inline-block;
+    }
+   
+ 
+}

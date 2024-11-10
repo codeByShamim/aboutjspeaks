@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About_JSpeaks</title>
+    <!-- style sheet link here-->
+    <link rel="stylesheet" href="styles.css">     
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <!-- swipper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>    
+  </head>
+  <body>
+    <div id="website-wrapper">
+         
+      <!-- top contact nav bar start here-->
+      <div id="contact-nav-wrapper">
+        <div id="contact-nav">
+          <!-- client address -->
+          <div class="address">
+            <i class="fa-solid fa-location-dot"></i> Scarsdale, New York 10583, United States of America
+          </div>
+          <!-- client social media -->
+          <div class="social-icon-btn">
+            <!-- follow icon -->
+            <div class="social-icon">
+              <a href="https://www.facebook.com/john.blakley.5">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="https://m.youtube.com/@Jspeaks6623/videos">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="https://www.instagram.com/jspeaks_">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/johnblakleyjr/">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="http://tiktok.com/@jspeaks__?_t=8kS4NBunARW&_r=1">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </div> <br>
+            <!-- follow btn -->
+            <div class="follow-btn">
+              <a href="https://linktr.ee/j.speaks__">FOLLOW ME</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- nav bar start here-->
+      <div id="nav-bar-wrapper">
+        <div id="nav-bar">
+          <!-- logo and toggle-btn -->
+          <div class="logo-toggle-btn">
+            <div class="logo">
+              <span>J</span>SPEAKS
+            </div>
+            <div id="toggle-btn">
+              <i class="fa-solid fa-bars"></i>
+              <i class="fa-solid fa-x" style="display: none;"></i>
+            </div>
+          </div>
+          <!-- nav link and contact btn -->
+          <div class="nav-content">
+            <div class="nav-link">
+              <ul>
+                <li>
+                  <a href="#">HOME</a>
+              </li>
+                <li>
+                  <a href="#upcoming-event-wrapper">EVENTS</a>
+                </li>
+                <li>
+                  <a href="#" id="videos" onclick="togglePlaylist()">PLAYLISTS&#9660;</a>
+                  <div class="playlist" id="playlists">
+                    <a href="./playlist/playlist01.html">1. Nonprofits</a>
+                    <a href="./playlist/playlist02.html">2. Up and Coming</a>
+                    <a href="./playlist/playlist03.html">3. Mental Wellbeing</a>
+                    <a href="./playlist/playlist04.html">4. Health & Wellness</a>
+                    <a href="./playlist/playlist05.html">5. Family & Relationships</a>
+                    <a href="./playlist/playlist06.html">6. Words of Encouragement</a>
+                    <a href="./playlist/playlist07.html">7. Businesses & Entrepreneurship</a>
+                    <a href="./playlist/playlist08.html">8. Organizations Creating Equitable Change</a>
+                  </div>
+                </li>
+                <li>
+                  <a href="./gallery/photo-gallery.html">GALLERY</a>
+                </li>
+                <li>
+                  <a href="./about/about.html">ABOUT</a>
+                </li>
+              </ul>
+            </div>
+            <!-- contact btn -->
+            <div class="contact-btn">
+              <a href="./contact/contact.html">CONTACT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- header section start here -->
+      <!-- <div id="header-wrapper">
+        <div id="header">
+          <div class="left-content side-animation">
+            <h1>HELLO, I'M <br>
+              <span>JOHN BLAKLEY</span>
+            </h1>
+            <br>
+            <p>Welcome to a space where inspiration meets action. With years of experience guiding individuals towards their best selves, I’m here to help you unlock your true potential. Whether through motivational speaking, life coaching, or hosting thought-provoking content on YouTube, I’m committed to your growth and success.</p>
+            <br>
+            <div class="more-btn">
+              <a href="https://www.youtube.com/@Jspeaks6623/videos">DISCOVER MORE</a>
+            </div>
+          </div>
+          <div class="right-image">
+            <img src="./assets/jhon-img.png" alt="">
+          </div>
+        </div>
+      </div> -->
+      <div class="header-banner-wrapper">
+        <!-- Carousel container -->
+        <div class="carousel-container">
+          <!-- Banner 1 -->
+          <div class="banner visible" id="banner1">
+            <img src="./assets/header-img/hea01.png" alt="Image 1">
+            <img src="./assets/header-img/hea02.png" alt="Image 2">
+            <img src="./assets/header-img/hea04.png" alt="Image 4">
+            <img src="./assets/header-img/hea05.png" alt="Image 5">
+            <img src="./assets/header-img/hea06.png" alt="Image 6">
+            <img src="./assets/header-img/hea07.png" alt="Image 7">
+            <img src="./assets/header-img/hea08.png" alt="Image 8">
+            <img src="./assets/header-img/hea09.png" alt="Image 9">
+            <img src="./assets/header-img/hea10.png" alt="Image 10">
+            <img src="./assets/header-img/hea11.png" alt="Image 11">
+            <img src="./assets/header-img/hea12.png" alt="Image 12">
+            <img src="./assets/header-img/hea13.png" alt="Image 13">
+            <img src="./assets/header-img/hea14.png" alt="Image 14">
+            <img src="./assets/header-img/hea15.png" alt="Image 15">
+            <img src="./assets/header-img/hea16.png" alt="Image 16">
+            <img src="./assets/header-img/hea03.png" alt="Image 3">
+            <img src="./assets/header-img/hea17.png" alt="Image 17">
+            <img src="./assets/header-img/hea18.png" alt="Image 18">
+            <img src="./assets/header-img/hea19.png" alt="Image 19">
+            <img src="./assets/header-img/hea20.png" alt="Image 20">
+            <img src="./assets/header-img/hea21.png" alt="Image 21" class="image-gone">
+              <!-- Bottom-right overlay image -->
+              <img src="./assets/jhon-img.png" alt="John" class="bottom-right-image">
+          </div>
+    
+          <!-- Banner 2 -->
+          <div class="banner hidden" id="banner2">
+            <img src="./assets/header-img/hea17.png" alt="Image 17">
+            <img src="./assets/header-img/hea18.png" alt="Image 18">
+            <img src="./assets/header-img/hea19.png" alt="Image 19">
+            <img src="./assets/header-img/hea20.png" alt="Image 20">
+            <img src="./assets/header-img/hea21.png" alt="Image 21">
+            <img src="./assets/header-img/hea22.png" alt="Image 22">
+            <img src="./assets/header-img/hea23.png" alt="Image 23">
+            <img src="./assets/header-img/hea24.png" alt="Image 24">
+            <img src="./assets/header-img/hea25.png" alt="Image 25">
+            <img src="./assets/header-img/hea28.png" alt="Image 1">
+            <img src="./assets/header-img/hea26.png" alt="Image 26">
+            <img src="./assets/header-img/hea27.png" alt="Image 27">
+            <img src="./assets/header-img/hea01.png" alt="Image 1">
+            <img src="./assets/header-img/hea02.png" alt="Image 2">
+            <img src="./assets/header-img/hea03.png" alt="Image 3">
+            <img src="./assets/header-img/hea04.png" alt="Image 4">
+            <img src="./assets/header-img/hea05.png" alt="Image 5">
+            <img src="./assets/header-img/hea06.png" alt="Image 6">
+            <img src="./assets/header-img/hea07.png" alt="Image 7">
+            <img src="./assets/header-img/hea28.png" alt="Image 1">
+            <img src="./assets/header-img/hea16.png" alt="Image 16"  class="image-gone">
+              <!-- Bottom-right overlay image -->
+              <img src="./assets/jhon-img.png" alt="John" class="bottom-right-image">
+          </div>
+        </div>
+      </div>
+    
+      <!-- focus section -->
+       <div class="focus-section">
+        <h1 class="focus-title"><span class="real">Real People.</span> <span class="real">Real Conversations.</span> <span class="focus">JSpeaks <span class="blinking-dot"></span></span></h1><br><br>
+       <!-- main video -->
+<div id="main-video">
+  <div class="video-thumbnail" onclick="playVideo()">
+      <img src="./assets/thumbnail.jpeg" alt="Video Thumbnail">
+      <button class="play-button">&#9658;</button>
+  </div>
+  <video id="video" width="640" height="360" controls style="display:none;">
+      <source src="./assets/main-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+</div>
+
+          <!-- <div class="mision-vision">
+          <p class="mision"><img src="./assets/mission.png" alt=""> <br> <br> </p>
+          <p class="vision"> <img src="./assets/vision.png" alt=""><br><br> </p>
+          </div> -->
+          <div class="mision-vision">
+                        <!-- mision -->
+          <div class="mision">
+            <div class="mision-header">
+              <h1>MISSION</h1>
+              <img src="./assets/mission.png" alt="2">
+            </div>
+            <p> To connect, educate and empower the world one spotlight at a time.</p>
+         </div> <br><br>
+            <!-- vision -->
+          <div class="vision">
+            <div class="vision-header">
+              <h1>VISSION</h1>
+              <img src="./assets/vision.png" alt="1">
+            </div>
+            <p>To leave a lasting impact on the world that challenges people to think, consider and better themselves.</p>
+          </div>
+          </div>
+         
+       </div>
+      <!-- video section start here -->
+
+      <div id="video-section-wrapper">
+      <div class="latest-video-header">
+        <!-- <img src="./assets/video-marketing.png" alt=""> -->
+        <h1>Latest Video</h1>
+      </div>
+      <div id="video-section">
+        <!-- video content -->
+        <div class="video-content side-animation">
+          <h2>Wisdom Vs. Knowledge | JSpeaks</h2> <br>
+          <p>
+            I had the privilege to speak to both middle schoolers and adults at "Durham Divinity School" on the difference between Wisdom and Knowledge. It is important for all of us to utilize our Godly wisdom in all things and always make a conscious effort to do what is right in order to fulfill the will of God.
+
+<br>
+          </p>
+          <br>
+          <div class="watch-btn">
+            <a href="https://youtu.be/UhC-xsWeG3I?si=vqfAnnXoa9ruWxFz">LEARN MORE</a>
+          </div>
+        </div>
+        <!-- video -->
+        <div class="video-container">
+          <div class="video-thumbnail">
+              <img src="./assets/pl06t13.jpg" alt="Latest Video Thumbnail">
+              <button class="play-btn">
+                  <i class="fas fa-play"></i>
+              </button>
+          </div>
+          <video controls id="video2" style="display: none;">
+              <source src="./assets/videoplayback.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+      </div>
+    </div>
+      </div>
+<!-- Gallery Section -->
+<div id="gallery-section">
+  <div class="gallery-icon">
+    <img src="./assets/videos.png" alt="Gallery Icon">
+  </div>
+  <h2 class="gallery-header">Inspiration in Action</h2>
+
+  <div class="gallery-container">
+
+    <!-- Gallery Item 1 -->
+    <div class="gallery-item">
+      <img src="./assets/pl01t04.jpg" alt="Gallery Image 1">
+      <div class="gallery-details">
+        <h3>Introducing Urban Community AgriNomics</h3>
+        <button onclick="openModal(
+            'videoModal',
+            './assets/pl01t04.jpg', 
+            './preview-videos/preview-video08.mp4',
+            'Urban Community AgriNomics',
+            './assets/pl01roimage04.jpg',
+            null, 
+            null,
+            'desc02-pl05', 
+            'title02pl05',
+            null, 
+            'https://www.instagram.com/urbancommunityagrinomics/',
+            null, 
+            'https://www.facebook.com/ucantoday/', 
+            'https://www.linkedin.com/company/urban-community-agronomics-ucan/', 
+            null, 
+            '', 
+            'https://www.ucan.today/',
+            '',
+            'https://youtu.be/u5CtHJPFIms?si=8gE01eOUCbf4DwV-'
+        )">VIEW DETAILS</button>
+      </div>
+    </div>
+
+    <!-- Gallery Item 2 -->
+    <div class="gallery-item">
+      <img src="./assets/pl01t02.jpg" alt="Gallery Image 2">
+      <div class="gallery-details">
+        <h3>Introducing Kramden</h3>
+        <button onclick="openModal(
+            'videoModal',
+            './assets/pl01t02.jpg', 
+            './preview-videos/preview-video07.mp4',
+            'Lile Stephens Kramden',
+            './assets/pl01roimage02.jpeg',
+            '', 
+            '', 
+            'desc02-pl01', 
+            'title02pl01', 
+            '', 
+            'https://www.instagram.com/kramdeninstitute?igsh=dHowMmxrM2F2eXRo',
+            null, 
+            'https://www.facebook.com/share/DqfC2zsVXzLvkTox/?mibextid=LQQJ4d', 
+            'https://www.linkedin.com/company/kramden-institute/', 
+            null, 
+            '', 
+            'https://kramden.org/',
+            '',
+            'https://youtu.be/fVrNGBuJRdA?si=mAOsLuQJHbjTv_1f'
+        )">VIEW DETAILS</button>
+      </div>
+    </div>
+
+    <!-- Gallery Item 3 -->
+    <div class="gallery-item">
+      <img src="./assets/pl03t04.jpg" alt="Gallery Image 3">
+      <div class="gallery-details">
+        <h3>Introducing Express & Release Therapeutic Dance</h3>
+        <button onclick="openModal(
+            'videoModal',
+            './assets/pl03t04.jpg', 
+            './preview-videos/preview-video06.mp4',
+            'Gabby Rivero',
+            './assets/pl03roimage04.jpeg',
+            null, 
+            null,
+            'desc04-pl03', 
+            'title04pl03',
+            '', 
+            'https://www.instagram.com/expressnrelease?igsh=bDFuOXE1Z2JzeDNq',
+            null, 
+            'https://www.facebook.com/share/EXKMVBRfcDQwDjNn/?mibextid=LQQJ4d', 
+            'https://www.linkedin.com/company/express-release-therapeutic-dance/', 
+            null, 
+            null, 
+            'https://www.expressnrelease.com/',
+            '',
+            'https://youtu.be/Gv0SnEhWvrc?si=tqpjGm4gwKhCs2iB')">VIEW DETAILS</button>
+      </div>
+    </div>
+
+    <!-- Gallery Item 4 -->
+    <div class="gallery-item">
+      <img src="./assets/pl08t01.jpg" alt="Gallery Image 4">
+      <div class="gallery-details">
+        <h3>Introducing The Resiliency Collaborative</h3>
+        <button onclick="openModal(
+            'videoModal',
+            './assets/pl08t01.jpg', 
+            './preview-videos/preview-video05.mp4',
+            'Z, Nae & Noel',
+            './assets/pl08roimage01.jpeg',
+            null, 
+            null, 
+            'desc01-pl08', 
+            'title01pl08',
+            '', 
+            'https://www.instagram.com/theresiliencycollaborative?igsh=MWhtb2Z0dGMyYnl4dw==',
+            null, 
+            'https://www.facebook.com/share/MpLR8bERW52gngQr/?mibextid=LQQJ4d', 
+            'https://www.linkedin.com/company/the-resiliency-collaborative/', 
+            null, 
+            '', 
+            'https://trcnc.org/',
+            '',
+            'https://youtu.be/1Au4rRqqIOY?si=FkSW__TISk1qu76d'
+        )">VIEW DETAILS</button>
+      </div>
+    </div>
+
+    <!-- Gallery Item 5 -->
+    <div class="gallery-item">
+      <img src="./assets/pl01t01.jpg" alt="Gallery Image 5">
+      <div class="gallery-details">
+        <h3>Introducing Windy Hill Play</h3>
+        <button onclick="openModal(
+            'videoModal',
+            './assets/pl01t01.jpg', 
+            './preview-videos/preview-video04.mp4',
+            'Mariah King',
+            './assets/pl01roimage01.jpeg',
+            'Princess Rahman', 
+            './assets/pl01roimage01.2.jpeg', 
+            'desc01-pl01', 
+            'title01pl01', 
+            null, 
+            'https://www.instagram.com/windy_hill_play/',
+            null, 
+            'https://www.facebook.com/profile.php?id=61560281581248', 
+            'https://www.linkedin.com/company/windy-hill-play/', 
+            null, 
+            null, 
+            'https://www.windyhillplay.org/',
+            '',
+            'https://youtu.be/bIk_kCL4p68?si=0bP8gXf8aWX8Yj-R'
+        )">VIEW DETAILS</button>
+      </div>
+    </div>
+
+    
+   <!-- Gallery Item 5 -->
+<div class="gallery-item">
+  <img src="./assets/pl02t02.jpg" alt="Gallery Image 5">
+  <div class="gallery-details">
+    <h3>Meet Erika Castro & Ashley Preston</h3>
+    <button onclick="openModal(
+        'videoModal',
+        './assets/pl02t02.jpg', 
+        './preview-videos/preview-video03.mp4',
+        'Erika',
+        './assets/pl02roimage01.jpeg',
+        'Ashley', 
+        './assets/pl02roimage01.2.jpeg', 
+        'desc02-pl02', 
+        'title02pl02',
+        null,
+        'https://www.instagram.com/erikacastrocomedy?igsh=MXNydDBoMDdmaWthaA==',
+        'https://www.instagram.com/ashleypcomedy?igsh=MXNzNmp2cXF2eTludQ==',
+        null, 
+        null, 
+        null,
+        null,
+        null,
+        null,
+        'https://youtu.be/Yec1qi0_VWQ?si=Zo3LqlKlOLi6tjYh')">VIEW DETAILS</button>
+  </div>
+</div>
+
+<!-- Gallery Item 6 -->
+<div class="gallery-item">
+  <img src="./assets/pl02t01.jpg" alt="Gallery Image 6">
+  <div class="gallery-details">
+    <h3>Meet Jermaine FunnyMaine Johnson</h3>
+    <button onclick="openModal(
+        'videoModal',
+        './assets/pl02t01.jpg', 
+        './preview-videos/preview-video02.mp4',
+        'Jermaine Johnson',
+        './assets/pl02roimage02.jpeg',
+        null,
+        null, 
+        'desc01-pl02', 
+        'title01pl02',
+        'https://twitter.com/funnymaine', 
+        'https://www.instagram.com/funnymaine',
+        null,
+        'https://www.facebook.com/funnymaine?_rdc=1&_rdr', 
+        'https://www.linkedin.com/in/funnymaine', 
+        'https://www.youtube.com/funnymaine', 
+        'https://www.tiktok.com/@funnymaine', 
+        null, 
+        null,
+        'https://youtu.be/uQVMfCeyKKk?si=3L9242y7JOgtASUt')">VIEW DETAILS</button>
+  </div>
+</div>
+
+
+<!-- Gallery Item 7 -->
+<div class="gallery-item">
+  <img src="./assets/pl07t04.jpg" alt="Gallery Image 8">
+  <div class="gallery-details">
+    <h3>Introducing Indigenous Soul YHW</h3>
+    <button onclick="openModal(
+        'videoModal',
+        './assets/pl07t04.jpg', 
+        './preview-videos/preview-video01.mp4',
+        'Raevin Bryant',
+        './assets/pl07roimage04.jpeg',
+        null,
+        null,
+        'desc04-pl07', 
+        'title04pl07',
+        null, 
+        'https://www.instagram.com/indigenoussoulyhw?igsh=emR2cng2Nmxxemdi',
+        null, 
+        'https://www.facebook.com/share/et3vL9Ncw1HjPWQD/?mibextid=LQQJ4d', 
+        '', 
+        null,
+        null, 
+        null, 
+        'https://www.indigenoussoulyhw.com/',
+        'https://youtu.be/pak_sX5M2sQ?si=R0Ixa-cFdkr1J3tr')">VIEW DETAILS</button>
+  </div>
+</div>
+
+    
+    
+  
+  </div>
+</div>
+
+
+
+
+
+<!-- Modal Structure -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <!-- Close Button -->
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    
+    <!-- Title (Dynamically set via JavaScript) -->
+    <h2 id="modalTitle"></h2>
+
+    <!-- Modal Image (Initially Visible) -->
+    <img id="modalImage" class="modalImage" src="" alt="Modal Image" style="display:block;"> <!-- Ensure it's visible initially -->
+
+    <!-- Modal Video (Initially Hidden) -->
+    <video id="modalVideo" class="modal-video" style="display:none;" controls>
+      <source id="modalVideoSource" src="" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <a id="modalLink" class="modal-footer" href="#" target="_blank">
+      <i class="fa-solid fa-video"></i> Watch Now
+    </a>
+    
+
+    <!-- Modal Description -->
+    <div id="modalDesc" class="desc"></div>
+
+    <!-- Profile Section (Optional) -->
+    <div class="profile-section">
+      <div class="profile-info">
+        <img id="modalProfileImage1" src="" alt="Profile Image 1">
+        <h3 id="modalUsername1">User Name 1</h3>
+      </div>
+      <div class="profile-info" id="profile2" style="display: none;">
+        <img id="modalProfileImage2" src="" alt="Profile Image 2">
+        <h3 id="modalUsername2">User Name 2</h3>
+      </div>
+    </div>
+
+    <!-- Social Media Buttons (Dynamically linked via JavaScript) -->
+    <div class="social-media-buttons">
+      <a id="modalTwitterLink" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a id="modalInstagramLink" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a id="modalInstagram2Link" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a id="modalFacebookLink" href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a id="modalLinkedInLink" href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a id="modalYouTubeLink" href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a id="modalTikTokLink" href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a id="modalWebsiteLink" href="#" target="_blank"><i class="fas fa-globe"></i></a>
+      <a id="modalWebsite2Link" href="#" target="_blank"><i class="fas fa-globe"></i></a>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+<!-- Modal Structure -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <!-- Close Button -->
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+
+    <!-- Title (Dynamically set via JavaScript) -->
+    <h2 id="modalTitle"></h2>
+
+    <!-- Modal Image (Initially Visible) -->
+    <img id="modalImage" class="modalImage" src="" alt="Modal Image" style="display:block;"> <!-- Ensure it's visible initially -->
+
+    <!-- Modal Video (Initially Hidden) -->
+    <video id="modalVideo" class="modal-video" style="display:none;" controls>
+      <source id="modalVideoSource" src="" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Watch Now Button, linking to the full YouTube video -->
+    <a id="modalLink" class="modal-footer" href="#" target="_blank">
+      <i class="fa-solid fa-video"></i> Watch Now
+    </a>
+
+    <!-- Modal Description -->
+    <div id="modalDesc" class="desc"></div>
+
+    <!-- Profile Section (Optional) -->
+    <div class="profile-section">
+      <div class="profile-info">
+        <img id="modalProfileImage1" src="" alt="Profile Image 1">
+        <h3 id="modalUsername1">User Name 1</h3>
+      </div>
+      <div class="profile-info" id="profile2" style="display: none;">
+        <img id="modalProfileImage2" src="" alt="Profile Image 2">
+        <h3 id="modalUsername2">User Name 2</h3>
+      </div>
+    </div>
+
+    <!-- Social Media Buttons (Dynamically linked via JavaScript) -->
+    <div class="social-media-buttons">
+      <a id="modalTwitterLink" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a id="modalInstagramLink" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a id="modalInstagram2Link" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a id="modalFacebookLink" href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a id="modalLinkedInLink" href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a id="modalYouTubeLink" href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a id="modalTikTokLink" href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a id="modalWebsiteLink" href="#" target="_blank"><i class="fas fa-globe"></i></a>
+      <a id="modalWebsite2Link" href="#" target="_blank"><i class="fas fa-globe"></i></a>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Function to open the modal
+function openModal(modalId, imageSrc, previewVideoSrc, username1, profileImage1, username2, profileImage2, descId, titleId, twitterLink, instagramLink, instagram2Link, facebookLink, linkedInLink, youtubeLink, tikTokLink, websiteLink, website2Link, fullVideoLink) {
+    // Set the modal image source and other details
+    document.getElementById("modalImage").src = imageSrc;
+    
+    // Set the "Watch Now" button link to the YouTube full video link, if provided
+    const modalLink = document.getElementById("modalLink");
+    if (fullVideoLink) {
+        modalLink.href = fullVideoLink; // Set full video link for the Watch Now button
+        modalLink.style.display = "inline-block"; // Show the link
+    } else {
+        modalLink.style.display = "none"; // Hide if no link is provided
+    }
+
+    document.getElementById("modalUsername1").innerText = username1;
+    document.getElementById("modalProfileImage1").src = profileImage1;
+
+    // Handle second profile information
+    if (profileImage2 && username2) {
+        document.getElementById("modalProfileImage2").src = profileImage2;
+        document.getElementById("modalUsername2").innerText = username2;
+        document.getElementById("profile2").style.display = "block";
+    } else {
+        document.getElementById("profile2").style.display = "none";
+    }
+
+    // Set social media links and show/hide icons
+    const socialMediaLinks = {
+        twitter: document.getElementById("modalTwitterLink"),
+        instagram: document.getElementById("modalInstagramLink"),
+        instagram2: document.getElementById("modalInstagram2Link"),
+        facebook: document.getElementById("modalFacebookLink"),
+        linkedIn: document.getElementById("modalLinkedInLink"),
+        youtube: document.getElementById("modalYouTubeLink"),
+        tikTok: document.getElementById("modalTikTokLink"),
+        website: document.getElementById("modalWebsiteLink"),
+        website2: document.getElementById("modalWebsite2Link"),
+    };
+
+    const links = {
+        twitter: twitterLink,
+        instagram: instagramLink,
+        instagram2: instagram2Link,
+        facebook: facebookLink,
+        linkedIn: linkedInLink,
+        youtube: youtubeLink,
+        tikTok: tikTokLink,
+        website: websiteLink,
+        website2: website2Link,
+    };
+
+    for (const [key, link] of Object.entries(links)) {
+        if (link) {
+            socialMediaLinks[key].href = link;
+            socialMediaLinks[key].style.display = "inline-block"; // Show icon
+        } else {
+            socialMediaLinks[key].style.display = "none"; // Hide icon
+        }
+    }
+
+    // Fetch the description and title from descriptions.html
+    fetch('descriptions/descriptions.html')
+        .then(response => response.text())
+        .then(data => {
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = data;
+
+            // Get the title
+            const title = tempDiv.querySelector(`#${titleId}`);
+            document.getElementById("modalTitle").innerText = title ? title.innerText : "Default Title"; // Fallback title
+
+            // Get the description
+            const description = tempDiv.querySelector(`#${descId}`);
+            document.getElementById("modalDesc").innerHTML = description ? description.innerHTML : "<p>Description not found.</p>";
+        })
+        .catch(error => {
+            console.error('Error fetching descriptions:', error);
+            document.getElementById("modalDesc").innerHTML = "<p>Error loading description.</p>";
+        });
+
+    // Show the modal
+    document.getElementById(modalId).style.display = "block";
+
+   // Wait for 2 seconds, then replace the image with the preview video and start playback
+   setTimeout(() => {
+        // Hide the image
+        document.getElementById("modalImage").style.display = "none";
+
+        // Set up the preview video and show it
+        const videoElement = document.getElementById("modalVideo");
+        const videoSource = videoElement.querySelector("source");
+
+        // Set the video source and load it
+        videoSource.src = previewVideoSrc; // Use the preview video from the gallery item
+        videoElement.load(); // Reload the video to apply the source change
+        videoElement.style.display = "block"; // Show the video
+        videoElement.play(); // Start playing the video automatically
+
+    }, 2000); // 2 seconds delay
+}
+
+// Function to close the modal
+function closeModal() {
+    const modal = document.getElementById("videoModal");
+    const videoElement = document.getElementById("modalVideo");
+    
+    // Hide the modal and reset the video
+    modal.style.display = "none";
+    videoElement.pause(); // Pause the video when the modal is closed
+    videoElement.style.display = "none"; // Hide the video
+    document.getElementById("modalImage").style.display = "block"; // Show the image again
+    videoElement.querySelector("source").src = ""; // Clear video source to avoid leftover playback
+}
+
+// Close modal when clicking outside of it
+window.onclick = function(event) {
+    const modal = document.getElementById("videoModal");
+    if (event.target == modal) {
+        closeModal();
+    }
+}
+
+// Close modal when clicking on the close button
+document.querySelector(".modal-close").onclick = function() {
+    closeModal();
+};
+</script>
+
+
+      
+      <!-- upcoming event section start here-->
+      <div id="upcoming-event-wrapper">
+        <!-- event header-->
+        <div id="upcoming-event">
+          <div class="event-img">
+            <img src="./assets/calender.png" alt="">
+          </div>
+          <h1>Upcoming Events & Interviews </h1>
+        
+        <div id="events-collection-list">
+          <!-- event -->
+          <div class="event-collection">
+            <div class="events-img">
+              <img src="./assets/e3.jpeg" alt="" width="100%">
+            </div>
+            <div class="event-contents">
+              <a href="https://www.apexchamber.com/" class="events-title">Apex Chamber Of Commerce</a>
+              <a href="https://www.linkedin.com/in/davidbohmnc">David Bohm</a>
+              <p class="events-date"><i class="fa-solid fa-clock"></i> November 2024</p>
+              <!-- <h1>November 2024</h1> -->
+            </div>
+          </div>
+          <!-- event -->
+          <div class="event-collection">
+            <div class="events-img">
+              <img src="./assets/e2.jpeg" alt="" width="100%">
+            </div>
+            <div class="event-contents">
+             <a href="http://www.positiveoutlooktrainings.com" class="events-title">Positive Outlook Trainings</a>
+              <a href="https://www.linkedin.com/in/tamerandavenport">Tameran Davenport</a>
+              <p class="events-date"><i class="fa-solid fa-clock"></i> December 2024</p>
+              <!-- <h1>December 2024</h1> -->
+            </div>
+          </div>
+          <!-- event -->
+          <div class="event-collection">
+            <div class="events-img">
+              <img src="./assets/e3.png" alt="" width="100%">
+            </div>
+            <div class="event-contents">
+              <a href="http://www.nosuchthingasfast.org/" class="events-title">No Such Thing As Fast</a>
+              <a href="https://www.linkedin.com/in/alexus-rhone-6243104">Alexus Rhone</a>
+              <p class="events-date"><i class="fa-solid fa-clock"></i> December 2024</p>
+              <!-- <h1>January 25, 2022</h1> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+ 
+      <div id="testimonial-section-wrapper">
+        <div id="testimonial-section">
+          <!-- Testimonial Header -->
+          <div class="testimonial-header">
+            <div class="testimonial-icon">
+              <img src="./assets/testimonial.png" alt="Testimonials">
+            </div>
+            <h1>TESTIMONIALS</h1> 
+          </div> 
+      
+          <!-- Swiper for Testimonial Slider -->
+          <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+              <!-- Testimonial Item 01 -->
+             
+             
+              <div class="swiper-slide testimonial-item ">
+                <div class="circle01"></div>
+                <div class="img-content">
+                  <div class="img"><img src="./assets/jennifer.jpeg" alt=""></div>
+                  <div class="content">
+                    <p>Thank you for all you do and HOW you do what you do; keep serving, magnifying and shining that light! Appreciate you.</p>
+                    <a href="https://www.linkedin.com/in/jennifer-castillo-6bb787100/">Jennifer Castillo</a>
+                    <small>Community Engagement, Social Justice Youth Leader</small>
+                  </div>
+                  <div class="triangle"></div>
+                </div>
+                <div class="circle02"></div>
+              </div> 
+              <div class="swiper-slide testimonial-item testimonial-item-two">
+                <div class="circle01"></div>
+                <div class="img-content">
+                  <div class="img"><img src="./assets/pl05roimage02.png" alt=""></div>
+                  <div class="content">
+                    <p>Seeking someone who cuts through the noise and gets straight to the point? Look no further! While credentials are crucial, we know that what truly counts is receiving top-notch quality and value right from session #1! Big thanks to JSpeaks for graciously welcoming me to his platform. Our chat was an absolute blast.</p>
+                    <a href="https://www.linkedin.com/in/tommurrayphd/">Dr. Tom Murray</a>
+                    <small>Author of Making Nice With Naughty</small>
+                  </div>
+                  <div class="triangle"></div>
+                </div>
+                <div class="circle02"></div>
+              </div>
+               <div class="swiper-slide testimonial-item testimonial-item-two">
+                <div class="circle01"></div>
+                <div class="img-content">
+                  <div class="img"><img src="./assets/pl07roimage04.jpeg" alt=""></div>
+                  <div class="content">
+                    <p>Thanks again to JSpeaks and your amazing film crew for the wonderful opportunity! Much love always!</p>
+                    <a href="https://www.instagram.com/indigenoussoulyhw?igsh=emR2cng2Nmxxemdi">Raevin Bryant</a>
+                    <small>Founder/ CEO of IndigenousSoul YHWA</small>
+                  </div>
+                  <div class="triangle"></div>
+                </div>
+                <div class="circle02"></div>
+              </div>  
+              <div class="swiper-slide testimonial-item">
+                <div class="circle01"></div>
+                <div class="img-content">
+                  <div class="img"><img src="./assets/pl07roimage01.jpeg" alt=""></div>
+                  <div class="content">
+                    <p>Thank you JSpeaks for the opportunity to connect and share!</p>
+                    <a href="https://www.linkedin.com/in/jarryon/">Jarryon Paul</a>
+                    <small>Founder/ CEO of Sunshine</small>
+                  </div>
+                  <div class="triangle"></div>
+                </div>
+                <div class="circle02"></div>
+              </div>
+              <div class="swiper-slide testimonial-item">
+                <div class="circle01"></div>
+                <div class="img-content">
+                  <div class="img"><img src="./assets/pl07roimage02.jpeg" alt=""></div>
+                  <div class="content">
+                    <p>Had such an amazing interview with JSpeaks!</p>
+                    <a href="https://www.linkedin.com/in/daniimcletchie/">Danii Mcletchie</a>
+                    <small>CEO of Carnicycle</small>
+                  </div>
+                  <div class="triangle"></div>
+                </div>
+                <div class="circle02"></div>
+              </div>
+             
+              <div class="swiper-slide testimonial-item">
+                <div class="circle01"></div>
+                <div class="img-content">
+                  <div class="img"><img src="./assets/carnicycle.jpeg" alt=""></div>
+                  <div class="content">
+                    <p>We were so happy to have this interview, your platform is amazing John!</p>
+                    <a href="https://www.carnicycle.com/">Carnicycle</a>
+                    <small>Making Carnival Sustainable</small>
+                  </div>
+                  <div class="triangle"></div>
+                </div>
+                <div class="circle02"></div>
+              </div>
+              
+             
+              <div class="swiper-slide testimonial-item">
+                <div class="circle01"></div>
+                <div class="img-content">
+                  <div class="img"><img src="./assets/shake-sumns.jpeg" alt=""></div>
+                  <div class="content">
+                    <p>One of the greatest partnerships we have been able to execute all.</p>
+                    <a href="https://www.instagram.com/shakesumn4u?igsh=N3B6MHo5b3l2dDI3">Shake Sum’n</a>
+                    <small>Habitul Creators + Melanated Mixologist + PVO  </small>
+                  </div>
+                  <div class="triangle"></div>
+                </div>
+                <div class="circle02"></div>
+              </div>
+              <div class="swiper-slide testimonial-item">
+                <div class="circle01"></div>
+                <div class="img-content">
+                  <div class="img"><img src="./assets/pl01roimage04.jpg" alt=""></div>
+                  <div class="content">
+                    <p>We had such a great time filming with you all! ❤️</p>
+                    <a href="https://www.ucan.today/">Urban Community AgriNomics</a>
+                    <small>Durhams Nonprofit Community Garden</small>
+                  </div>
+                  <div class="triangle"></div>
+                </div>
+                <div class="circle02"></div>
+              </div>
+              <div class="swiper-slide testimonial-item">
+                <div class="circle01"></div>
+                <div class="img-content">
+                  <div class="img"><img src="./assets/pl04roimage03.jpeg" alt=""></div>
+                  <div class="content">
+                    <p style="text-align: center;">You're a gem. A joy. A force ✊🏾</p>
+                    <a href="https://www.linkedin.com/in/tanyambassmsches/">Dr. Tanya Bass</a>
+                    <small>PhD, CHES <sup>&reg;</sup> , CSE</small>
+                  </div>
+                  <div class="triangle"></div>
+                </div>
+                <div class="circle02"></div>
+              </div>
+              <div class="swiper-slide testimonial-item">
+                <div class="circle01"></div>
+                <div class="img-content">
+                  <div class="img"><img src="./assets/pl01roimage03.jpeg" alt=""></div>
+                  <div class="content">
+                    <p>JSpeaks much thanks to you and your amazing team. Praying that God's favor overtakes you and your team in unexpected ways. Blessings. </p>
+                    <a href="https://www.shininglightindarkness.org/">ED Dudley</a>
+                    <small>Co-founder of Shining Light In Darkness</small>
+                  </div>
+                  <div class="triangle"></div>
+                </div>
+                <div class="circle02"></div>
+              </div>
+              <div class="swiper-slide testimonial-item">
+                <div class="circle01"></div>
+                <div class="img-content">
+                  <div class="img"><img src="./assets/pl01roimage01.jpeg" alt=""></div>
+                  <div class="content">
+                    <p>Thank you, John! We are so incredible grateful for you and your team! You all exemplify the positivity that the platform, Jspeaks, is on a mission to spread.</p>
+                    <a href="https://www.linkedin.com/in/mariah-king-228b32127/">Mariah King</a>
+                    <small>CEO of Windy Hill Play</small>
+                  </div>
+                  <div class="triangle"></div>
+                </div>
+                <div class="circle02"></div>
+              </div>
+              <div class="swiper-slide testimonial-item">
+                <div class="circle01"></div>
+                <div class="img-content">
+                  <div class="img"><img src="./assets/pl01roimage01.2.jpeg" alt=""></div>
+                  <div class="content">
+                    <p>Thank you John for allowing Windy hill Play to use your platform! You and your team are amazing and such a pleasure to work with! This is only the beginning!</p>
+                    <a href="https://www.linkedin.com/in/princess-rahman-44709614a/">Princess Rahman</a>
+                    <small>COO of Windy Hill Play</small>
+                  </div>
+                  <div class="triangle"></div>
+                </div>
+                <div class="circle02"></div>
+              </div>
+
+              <div class="swiper-slide testimonial-item">
+                <div class="circle01"></div>
+                <div class="img-content">
+                  <div class="img"><img src="./assets/windy-hill-play.jpeg" alt=""></div>
+                  <div class="content">
+                    <p>We had a fantastic time in the interview with JSpeaks! It's such an honor to be part of a platform dedicated to spreading positive stories. Thank you for highlighting our mission and helping us spread our vision for a caring and inclusive childcare community. A big thank you to all that made this collaboration such a positive experience.</p>
+                    <a href="https://windyhillplay.org/">Windy Hill Play</a>
+                    <small>Durhams Nonprofit Childcare Organizaion</small>
+                  </div>
+                  <div class="triangle"></div>
+                </div>
+                <div class="circle02"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- Navigation Buttons -->
+      <div class="swiper-button-prev testimonial-prev-btn"></div>
+      <div class="swiper-button-next testimonial-next-btn"></div>
+      </div>
+      
+      
+    </div>
+   <!-- contact form start here -->
+<div id="form-section">
+  <!-- form header -->
+  <div class="form-header">
+    <h1>Get In Touch</h1>
+    <p>We'd love to hear from you! If you have any questions, comments, or would like to get in touch, please don't hesitate to reach out. Your feedback and inquiries are important!</p>
+  </div>
+<!-- Form Section -->
+<div id="form-wrapper">
+  <form id="form" class="form">
+    <div class="input-field">
+      <div class="nameEmailPhone">
+        <!-- Full Name -->
+        <div class="name">
+          <label for="name">Full Name:</label>
+          <input type="text" name="Name" id="name" required>
+        </div>
+        <!-- Email Address -->
+        <div class="email">
+          <label for="email">Email Address:</label>
+          <input type="email" name="Email" id="email" required>
+        </div>
+        <!-- Phone Number -->
+        <div class="phone-number">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" name="Phone" id="phone" placeholder="(123) 456-7890" required>
+        </div>
+      </div>
+      <!-- Subject -->
+      <div class="subject">
+        <label for="subject">Subject:</label>
+        <input type="text" name="Subject" id="subject">
+      </div>
+      <!-- Message -->
+      <div class="message">
+        <label for="message">Message:</label>
+        <textarea name="Message" id="message" cols="30" rows="15" required placeholder="Enter your message here..."></textarea>
+      </div>
+      <!-- Send button with spinner -->
+      <button type="submit" id="submit" class="submit-btn">
+        SUBMIT   <span id="spinner" class="spinner" style="display: none;"></span>
+      </button>
+    </div>
+  </form>
+</div>
+
+<!-- Popup Message -->
+<div id="popup-message" class="popup">
+  <div class="popup-content">
+    <span id="popup-text"></span>
+    <button onclick="closePopup()" class="popup-close">Close</button>
+  </div>
+</div>
+
+<!-- Include EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  // Initialize EmailJS with your User ID
+  (function(){
+    emailjs.init("0wIWf4fbHinRfDRzK"); // Replace with your actual public key
+  })();
+
+  document.getElementById("form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const submitBtn = document.getElementById("submit");
+    const spinner = document.getElementById("spinner");
+
+    // Show spinner on submit button
+    spinner.style.display = "inline-block";
+    submitBtn.disabled = true;
+
+    // Get form data
+    const formData = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      phone: document.getElementById("phone").value,
+      subject: document.getElementById("subject").value,
+      message: document.getElementById("message").value
+    };
+
+    // Send email via EmailJS
+    emailjs.send("service_19rwxx4", "template_a0510j5", formData)
+      .then(response => {
+        console.log("Success:", response); // Log success response
+        showPopup("Form submitted successfully!"); // Success message
+        document.getElementById("form").reset(); // Reset form fields
+      })
+      .catch(error => {
+        console.error("Error:", error); // Log error details
+        showPopup("Error submitting form: " + error.text); // Error message
+      })
+      .finally(() => {
+        // Hide spinner and re-enable button when response is received
+        spinner.style.display = "none";
+        submitBtn.disabled = false;
+      });
+  });
+
+  function showPopup(message) {
+    document.getElementById("popup-text").textContent = message;
+    document.getElementById("popup-message").style.display = "block";
+  }
+
+  function closePopup() {
+    document.getElementById("popup-message").style.display = "none";
+  }
+</script>
+
+
+</div>
+
+  <!-- footer section start here -->
+  <footer>
+    <div class="footer-wrapper" id="footer">
+      <!-- footer about -->
+      <div class="footer-about">
+        <div class="logo"> ABOUT</div>
+        <p>
+          <span>Mission Statement:</span> To connect, educate and empower the world one spotlight at a time. <br>
+          <br>
+          <span>Vision Statement:</span> To leave a lasting impact on the world that challenges people to think, consider and better themselves
+        </p>
+      </div>
+      <!-- quick links -->
+      <div class="quick-links">
+        <h4>Quick Links:</h4>
+        <div class="qlinks">
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="./index.html">Home</a>
+        </div>
+        <div class="qlinks">
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="./index.html#upcoming-event-wrapper">Event</a>
+        </div>
+        <div class="qlinks">
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="./index.html#video-section">Video</a>
+        </div>
+        <div class="qlinks">
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="./gallery/photo-gallery.html">Gallery</a>
+        </div>
+        <div class="qlinks">
+          <i class="fa-solid fa-angle-right"></i>
+          <a href="./about/about.html">About</a>
+        </div>
+      </div>
+      <!-- social links -->
+      <div class="social-links">
+        <h4>Social Links:</h4>
+        <div class="slinks">
+          <a href="https://www.facebook.com/profile.php?id=61557552613463">
+            <i class="fa-brands fa-facebook"></i>Facebook </a>
+        </div>
+        <div class="slinks">
+          <a href="https://m.youtube.com/@Jspeaks6623/videos">
+            <i class="fa-brands fa-youtube"></i> YouTube </a>
+        </div>
+        <div class="slinks">
+          <a href="https://www.instagram.com/jspeaks_">
+            <i class="fa-brands fa-instagram"></i>Instagram </a>
+        </div>
+      </div>
+     <!-- Newsletter Section -->
+<div class="events-subscribe">
+<h4>JSpeaks Newsletter   <i class="fa-solid fa-newspaper" style="color: black; font-size: 28px; color: orangered;"></i></h4>
+<p>Subscribe now to receive the latest updates and never miss an event!</p>
+<a href="https://linktr.ee/j.speaks__?" target="_blank" class="subscribe-btn">CLICK TO SUBSCRIBE NOW</a>
+</div>
+
+    </div>
+    <!-- footer copyright tradmark -->
+    <div class="copyright-tradmark-wrapper">
+      <div class="copyright-tradmark">
+        <!-- footer logo -->
+        <div class="f-logo">
+          <div class="logo">
+            <span>J</span><p>SPEAKS</p>
+          </div>
+        </div>
+        <!-- copyright tradmark -->
+        <div class="tradmark">
+          <small>Copyright <i class="fa-regular fa-copyright"></i> 2024 <a href="../index.html">About_JSpeaks </a>  All Rights Reserved. </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+    </div>
+
+    <script>
+      const swiper = new Swiper('.testimonial-swiper', {
+        slidesPerView: 3, // Show 3 slides by default (desktop)
+        spaceBetween: 0,  // Ensure no space between slides to avoid cutting off
+        loop: true,       // Enable infinite loop
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          1200: {
+            slidesPerView: 3, 
+            spaceBetween: 50,  // No space between items to ensure full visibility
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10, // Space between items for medium screen (laptops)
+          },
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 10, // Single item for small screens (phones)
+          },
+        },
+      });
+    </script>
+    
+    
+      <!-- JavaScript for Carousel Functionality -->
+  <script>
+    const banner1 = document.getElementById("banner1");
+    const banner2 = document.getElementById("banner2");
+
+    function toggleBanners() {
+      // Toggle visibility of banners
+      banner1.classList.toggle("visible");
+      banner1.classList.toggle("hidden");
+      banner2.classList.toggle("visible");
+      banner2.classList.toggle("hidden");
+    }
+
+    // Switch between banners every 8 seconds
+    setInterval(toggleBanners, 5000);
+  </script>
+    
+    
+   
+<!-- js code -->
+       <script src="script.js"></script>
+
+      
+  </body>
+</html>
