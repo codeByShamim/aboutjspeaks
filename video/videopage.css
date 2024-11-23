@@ -1,20 +1,15 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 * {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 :root {
-    --primary-color: #FF6600; /* Main color */
-    --secondary-color: #FF8C00; /* Secondary color */
+    --primary-color: #FF6600;
+    /* Main color */
+    --secondary-color: #FF8C00;
+    /* Secondary color */
 }
 
 body {
@@ -23,26 +18,30 @@ body {
 }
 
 .container {
+
+
+
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     max-width: 1400px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .main-video {
     -webkit-box-flex: 70%;
-        -ms-flex: 70%;
-            flex: 70%;
+    -ms-flex: 70%;
+    flex: 70%;
     padding-right: 20px;
 }
 
@@ -50,9 +49,11 @@ body {
     width: 100%;
     border-radius: 8px;
 }
-.video-element{
+
+.video-element {
     border-radius: 5px;
 }
+
 .video-title {
     text-align: center;
     font-size: 24px;
@@ -65,44 +66,60 @@ body {
 }
 
 .video-questions {
-    list-style-type: none; /* Remove default list styling */
+    list-style-type: none;
+    /* Remove default list styling */
     padding: 0;
-    margin: 20px 0; /* Add some margin for spacing */
+    margin: 20px 0;
+    /* Add some margin for spacing */
 }
 
 .video-questions li {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; /* Use flexbox for alignment */
+    display: flex;
+    /* Use flexbox for alignment */
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; /* Center items vertically */
-    margin-bottom: 10px; /* Space between items */
-    padding: 10px; /* Add padding for better touch target */
-    background-color: #f9f9f9; /* Light background for better contrast */
-    border-radius: 5px; /* Rounded corners */
+    -ms-flex-align: center;
+    align-items: center;
+    /* Center items vertically */
+    margin-bottom: 10px;
+    /* Space between items */
+    padding: 10px;
+    /* Add padding for better touch target */
+    background-color: #f9f9f9;
+    /* Light background for better contrast */
+    border-radius: 5px;
+    /* Rounded corners */
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    /* Light shadow for depth */
 }
 
 .time {
-    font-weight: bold; /* Bold for emphasis */
-    margin-right: 15px; /* Space between time and text */
-    color: var(--primary-color); /* Use your primary color */
-    min-width: 60px; /* Fixed width for time to align items */
+    font-weight: bold;
+    /* Bold for emphasis */
+    margin-right: 15px;
+    /* Space between time and text */
+    color: var(--primary-color);
+    /* Use your primary color */
+    min-width: 60px;
+    /* Fixed width for time to align items */
 }
-.time a{
+
+.time a {
     color: var(--primary-color) !important;
 }
 
 .question {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1; /* Allow the question to take up remaining space */
-    color: #333; /* Darker color for readability */
+    -ms-flex: 1;
+    flex: 1;
+    /* Allow the question to take up remaining space */
+    color: #333;
+    /* Darker color for readability */
 }
 
-.main-video a{
+.main-video a {
     text-decoration: none;
     color: white;
 }
@@ -113,14 +130,15 @@ body {
     background-color: var(--primary-color);
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 15px; /* Space above button */
+    margin-top: 15px;
+    /* Space above button */
     text-decoration: none;
 }
 
 .sidebar {
     -webkit-box-flex: 30%;
-        -ms-flex: 30%;
-            flex: 30%;
+    -ms-flex: 30%;
+    flex: 30%;
 }
 
 .sidebar h3 {
@@ -134,8 +152,8 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .related-video {
@@ -143,18 +161,23 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-bottom: 10px;
 }
 
 .related-thumbnail {
-    width: 80px; /* Set a fixed width for uniformity */
-    height: 60px; /* Set a fixed height for uniformity */
-    border-radius: 5px; /* Rounded corners */
-    margin-right: 10px; /* Spacing to the right */
+    width: 80px;
+    /* Set a fixed width for uniformity */
+    height: 60px;
+    /* Set a fixed height for uniformity */
+    border-radius: 5px;
+    /* Rounded corners */
+    margin-right: 10px;
+    /* Spacing to the right */
     -o-object-fit: cover;
-       object-fit: cover; /* Maintain aspect ratio without stretching */
+    object-fit: cover;
+    /* Maintain aspect ratio without stretching */
 }
 
 
@@ -171,18 +194,22 @@ body {
 .guest-profile {
     margin-top: 20px;
     padding: 20px;
-    background-color: #ffffff; /* White background for contrast */
+    background-color: #ffffff;
+    /* White background for contrast */
     border-radius: 8px;
     -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; /* Smooth transition */
+    transition: all 0.3s ease;
+    /* Smooth transition */
 }
 
 h3 {
-    color: black; /* Use primary color for headings */
-    text-align: center; /* Center the main heading */
+    color: black;
+    /* Use primary color for headings */
+    text-align: center;
+    /* Center the main heading */
     margin-bottom: 20px;
 }
 
@@ -192,9 +219,11 @@ h3 {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; /* Stack profiles vertically */
-    gap: 15px; /* Space between profiles */
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* Stack profiles vertically */
+    gap: 15px;
+    /* Space between profiles */
 }
 
 .profile-item {
@@ -202,18 +231,21 @@ h3 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #f1f1f1; /* Light background for each profile */
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    /* Light background for each profile */
     padding: 15px;
     border-radius: 5px;
     -webkit-transition: background-color 0.3s;
     -o-transition: background-color 0.3s;
-    transition: background-color 0.3s; /* Smooth background transition */
+    transition: background-color 0.3s;
+    /* Smooth background transition */
 }
 
 .profile-item:hover {
-    background-color: #e0e0e0; /* Highlight on hover */
+    background-color: #e0e0e0;
+    /* Highlight on hover */
 }
 
 .profile-thumbnail {
@@ -222,8 +254,9 @@ h3 {
     border-radius: 50%;
     margin-right: 15px;
     -o-object-fit: cover;
-       object-fit: cover;
-    border: 2px solid var(--primary-color); /* Border for profile images */
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
+    /* Border for profile images */
 }
 
 
@@ -236,12 +269,14 @@ h3 {
 .guest-bio {
     margin-top: 5px;
     color: #555;
-    font-size: 0.9em; /* Slightly smaller font for bio */
+    font-size: 0.9em;
+    /* Slightly smaller font for bio */
 }
 
 .social-media {
     margin-top: 20px;
-    text-align: center; /* Center the social media section */
+    text-align: center;
+    /* Center the social media section */
 }
 
 .social-icons {
@@ -249,18 +284,22 @@ h3 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; /* Center icons */
-    gap: 15px; /* Space between icons */
+    -ms-flex-pack: center;
+    justify-content: center;
+    /* Center icons */
+    gap: 15px;
+    /* Space between icons */
 }
 
 .social-icon {
-    font-size: 26px; /* Slightly larger icon size */
+    font-size: 26px;
+    /* Slightly larger icon size */
     -webkit-transition: color 0.3s, -webkit-transform 0.3s;
     transition: color 0.3s, -webkit-transform 0.3s;
     -o-transition: color 0.3s, transform 0.3s;
     transition: color 0.3s, transform 0.3s;
-    transition: color 0.3s, transform 0.3s, -webkit-transform 0.3s; /* Smooth transition for hover effect */
+    transition: color 0.3s, transform 0.3s, -webkit-transform 0.3s;
+    /* Smooth transition for hover effect */
 }
 
 .social-icon.instagram {
@@ -281,8 +320,9 @@ h3 {
 
 .social-icon:hover {
     -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2); /* Enlarge on hover */
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    /* Enlarge on hover */
 }
 
 
@@ -292,8 +332,8 @@ h3 {
     .container {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;                                                                                                                                                                                                                                                                                                                                                                                                         
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
 
     .main-video {
@@ -303,28 +343,33 @@ h3 {
 
     .sidebar {
         -webkit-box-flex: 100%;
-            -ms-flex: 100%;
-                flex: 100%;
+        -ms-flex: 100%;
+        flex: 100%;
     }
 
     .guest-profile {
-        margin-top: 15px; /* Adjust spacing for mobile */
+        margin-top: 15px;
+        /* Adjust spacing for mobile */
     }
 
     .profile-thumbnail {
-        width: 70px; /* Adjust for smaller screens */
+        width: 70px;
+        /* Adjust for smaller screens */
         height: 70px;
     }
 
     .guest-name {
-        font-size: 1.1em; /* Slightly smaller name on mobile */
+        font-size: 1.1em;
+        /* Slightly smaller name on mobile */
     }
 
     .video-title {
-        font-size: 20px; /* Adjust for smaller screens */
+        font-size: 20px;
+        /* Adjust for smaller screens */
     }
 
     .video-description {
-        font-size: 14px; /* Adjust for smaller screens */
+        font-size: 14px;
+        /* Adjust for smaller screens */
     }
 }
