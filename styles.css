@@ -583,12 +583,13 @@ html {
 }
 
 
-.mision-header h1 {
-
+.mision-header .title {
+	font-weight: bold;
 	font-size: 65px;
 }
 
-.vision-header h1 {
+.vision-header .title {
+	font-weight: bold;
 	color: #000080;
 	font-size: 65px;
 }
@@ -652,7 +653,8 @@ html {
 	margin: auto;
 }
 
-.latest-video-header h1 {
+.latest-video-header .latest-video-title{
+	font-weight: bold;
 	font-size: 40px;
 	display: inline-block;
 	color: var(--primary-color);
@@ -674,8 +676,8 @@ html {
 	margin-top: 50px;
 }
 
-#video-section h2 {
-	text-align: ;
+#video-section h1 {
+	text-align: center;
 
 }
 
@@ -688,16 +690,18 @@ html {
 	margin: 20px;
 }
 
-#video-section p,
+/* #video-section p,
 h3,
 li {
 	text-align: left;
 	font-size: 18px;
 	color: #7f8787;
-}
+} */
 
 #video-section p {
 	text-align: justify;
+	font-size: 1.2em;
+	color: #7f8787;
 }
 
 .video-content li {
@@ -813,6 +817,7 @@ video {
 
 /* Gallery Header */
 .gallery-header {
+	font-weight: bold;
 	font-size: 2em;
 	margin-bottom: 50px;
 	color: #333;
@@ -1050,6 +1055,11 @@ video {
 	margin-bottom: 10px;
 }
 
+.desc ul li{
+	
+		margin-bottom: 10px;
+}
+
 .video-questions {
 	list-style-type: none;
 	/* Remove default list styling */
@@ -1083,7 +1093,7 @@ video {
 .time {
 	font-weight: bold;
 	/* Bold for emphasis */
-	margin-right: 15px;
+	margin-right: 10px;
 	/* Space between time and text */
 	color: var(--primary-color);
 	/* Use your primary color */
@@ -1104,11 +1114,11 @@ video {
 	/* Darker color for readability */
 }
 
-.desc ul li {
+/* .desc ul li {
 	margin: 10px 0;
 	background-color: rgba(211, 211, 211, 0.111);
 	padding: 5px;
-}
+} */
 
 
 
@@ -1286,7 +1296,7 @@ video {
 	text-align: center;
 }
 
-#upcoming-event h1 {
+#upcoming-event .events-head-title {
 	text-align: center;
 	display: block;
 	margin: auto;
@@ -1398,100 +1408,6 @@ video {
 
 
 
-/*qna section style start here */
-.qna-section {
-	margin: auto;
-	padding: 50px 20px;
-}
-
-/* qna section header  */
-.qna-header {
-	padding: 80px 0;
-	text-align: center;
-}
-
-.qna-header h1 {
-	text-align: center;
-	width: 60%;
-	margin: auto;
-}
-
-.qna-header h1 span {
-	color: var(--primary-color);
-	text-decoration: underline;
-}
-
-.faq-img {
-	margin-bottom: 20px;
-}
-
-/* accordion  section start here*/
-.accordion-wrapper {
-	width: 60%;
-	margin: auto;
-	margin-bottom: 100px;
-	border: 1px solid var(--primary-color);
-	border-radius: 4px;
-}
-
-.accordion {
-	width: 100%;
-	background-color: var(--primary-color);
-	color: lightgray;
-	cursor: pointer;
-	padding: 18px;
-	border: none;
-	text-align: left;
-	outline: none;
-	font-size: 18px;
-	-webkit-transition: 0.4s;
-	-o-transition: 0.4s;
-	transition: 0.4s;
-}
-
-/* Style for active accordion header or on hover */
-.active,
-.accordion:hover {
-	background-color: lightgray;
-	color: black;
-}
-
-/* Style for the plus/minus icon on the accordion */
-.accordion:after {
-	content: "\002B";
-	/* Plus icon */
-	color: var(--deep-cerulean-600);
-	font-weight: bold;
-	float: right;
-	margin-left: 5px;
-}
-
-/* Style for the minus icon on the active accordion header */
-.active:after {
-	content: "\2212";
-	/* Minus icon */
-}
-
-/* Style for the accordion panel/content */
-.panel {
-	width: 100%;
-	max-height: 0;
-	overflow: hidden;
-	-webkit-transition: max-height 0.2s ease-out;
-	-o-transition: max-height 0.2s ease-out;
-	transition: max-height 0.2s ease-out;
-	font-size: 18px;
-	color: #7f8787;
-	padding: 0;
-	/* Set initial padding to 0 */
-}
-
-.panel p {
-	padding: 15px !important;
-	line-height: 25px;
-	text-align: left;
-}
-
 /* Testimonial Section Wrapper */
 #testimonial-section-wrapper {
 	background-color: #f9f9f9;
@@ -1511,9 +1427,11 @@ video {
 }
 
 /* Testimonial Header */
-.testimonial-header h1 {
+.testimonial-header .testimonial-head-title {
+	font-size: 2em;
 	margin-bottom: 50px;
 	text-align: center;
+	font-weight: bold;
 	/* Center the header text */
 }
 
@@ -1746,6 +1664,10 @@ video {
 	margin: auto;
 	text-align: center;
 	margin-bottom: 30px;
+}
+.form-head-title{
+	font-size: 2em;
+	font-weight: bold;
 }
 
 .form-header p {
@@ -2332,19 +2254,7 @@ input[type="email"] {
 	}
 
 
-	/* accordian section */
-	.accordion-wrapper {
-		width: 100%;
-	}
-
-	.qna-header {
-		padding-top: 0;
-	}
-
-	.qna-header h1 {
-		width: 90%;
-	}
-
+	
 
 
 	.contact-btn a {
