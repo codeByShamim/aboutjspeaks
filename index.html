@@ -150,7 +150,7 @@
                         <a href="#upcoming-event-wrapper">EVENTS</a>
                      </li>
                      <li>
-                        <a href="../playlist/episode-teasers-playlist.html">TEASERS</a>
+                        <a href="./teasers/episode-teasers.html">TEASERS</a>
                      </li>
                      <li>
                         <a  id="videos" onclick="togglePlaylist()">PLAYLISTS&#9660;</a>
@@ -234,7 +234,7 @@
                <img src="./assets/header-img/lucille-patterson-photo.webp" alt="Lucille Patterson portrait photo">
                <img src="./assets/header-img/aniya-bourne-photo.webp" alt="Aniya Bourne portrait photo">
                <img src="./assets/header-img/zae-collins-photo.webp" alt="Zae Collins portrait photo">
-               <img src="./assets/header-img/danii-mcletchie-photo.webp" alt="Danii McLetchie portrait photo" >
+               <img src="./assets/header-img/tameran-davenport-photo.webp" alt="Tameran Davenport portrait photo" >
                <img src="./assets/header-img/princess-rahman-photo.webp" alt="Princess Rahman portrait photo">
                <img src="./assets/header-img/mariah-king-photo.webp" alt="Mariah King portrait photo" class="image-gone">
                <!-- Bottom-right overlay image -->
@@ -782,22 +782,62 @@
          <!-- Swiper for Testimonial Slider -->
          <div class="swiper testimonial-swiper">
             <div class="swiper-wrapper">
-               <!-- Testimonial Item 01 -->
-               <div class="swiper-slide testimonial-item ">
+               <div class="swiper-slide testimonial-item" style="position: relative;">
                   <div class="circle01"></div>
                   <div class="img-content">
-                     <div class="img"><img src="./assets/potrainings.webp"
-                           alt="potrainings Logo"></div>
-                     <div class="content">
-                        <p>
-                           This was an amazing experience. Thank you Jspeaks and Production Team!!!</p>
-                        <a href="https://www.positiveoutlooktrainings.com/">Positive Outlook Trainings</a>
-                        <a href="https://pogrooming.com/">Positive Outlook Grooming </a>
-                     </div>
-                     <div class="triangle"></div>
+                    <div class="img"><img src="./assets/tameran-davenport-profile-picture.webp" alt="Tameran Davenport"></div>
+                    <div class="content">
+                      <p>This was an amazing experience. Thank you JSpeaks and Production Team!!!</p>
+                      <a href="#" 
+                         onclick="togglePopup(event)">
+                         Tameran Davenport
+                      </a>
+                      <small>President of Positive Outlook Trainings</small>
+                      
+                      <!-- Popup -->
+                      <div id="popup-container" 
+                           style="display: none; position: absolute; top: 80px; left: 50%; transform: translateX(-50%); 
+                                  background-color: white; border: 1px solid #ccc; padding: 10px; border-radius: 5px; 
+                                  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); z-index: 1000; text-align: center; width: 250px;">
+                        <!-- Links -->
+                        <a href="https://www.positiveoutlooktrainings.com/" 
+                           style="display: block; color: #FF6600;  margin-bottom: 5px; text-decoration: underline;">Positive Outlook Trainings</a>
+                        <a href="https://pogrooming.com/" 
+                           style="display: block; color: #FF6600; text-decoration: underline;">Positive Outlook Grooming</a>
+                        <!-- Arrow -->
+                        <div style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); 
+                                    width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; 
+                                    border-top: 10px solid white;"></div>
+                      </div>
+                    </div>
+                    <div class="triangle"></div>
                   </div>
                   <div class="circle02"></div>
-               </div>
+                </div>
+                
+                <script>
+                  function togglePopup(event) {
+                    event.preventDefault(); // Prevent default anchor behavior
+                    const popup = document.getElementById('popup-container');
+                    popup.style.display = 'block'; // Show popup
+                  }
+                
+                  // Close popup when clicking outside
+                  document.addEventListener('click', (event) => {
+                    const popup = document.getElementById('popup-container');
+                    const trigger = document.querySelector('[onclick="togglePopup(event)"]');
+                    if (
+                      popup.style.display === 'block' &&
+                      !popup.contains(event.target) &&
+                      event.target !== trigger
+                    ) {
+                      popup.style.display = 'none'; // Hide popup
+                    }
+                  });
+                </script>
+                
+
+
                <div class="swiper-slide testimonial-item ">
                   <div class="circle01"></div>
                   <div class="img-content">
