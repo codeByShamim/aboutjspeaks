@@ -321,6 +321,7 @@ html {
 	border: none !important;
 }
 
+
 /* Media queries for responsiveness */
 @media (max-width: 1024px) {
 	.banner {
@@ -448,10 +449,25 @@ html {
 
 .latest-video {
 	border: 5px solid #0000;
+	background: -webkit-gradient(linear, left top, left bottom, from(#131219), to(#131219)) padding-box, -webkit-gradient(linear,
+			left top, left bottom,
+			from(var(--angle)),
+			color-stop(green),
+			to(#ff6600)) border-box;
+	background: -o-linear-gradient(#131219, #131219) padding-box, -o-linear-gradient(var(--angle),
+			green,
+			#ff6600) border-box;
 	background: linear-gradient(#131219, #131219) padding-box, linear-gradient(var(--angle),
 			green,
 			#ff6600) border-box;
-	animation: 8s rotate linear infinite;
+	-webkit-animation: 8s rotate linear infinite;
+	        animation: 8s rotate linear infinite;
+}
+
+@-webkit-keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
 }
 
 @keyframes rotate {
@@ -1046,6 +1062,13 @@ video {
 	margin-bottom: 20px;
 	color: gray;
 }
+
+@media screen and (max-width: 768px) {
+    .desc {
+        margin-bottom: 20px; /* Adjust this value as needed */
+    }
+}
+
 
 .desc p {
 	margin: 10px 0;
