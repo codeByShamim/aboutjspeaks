@@ -8,5 +8,5 @@ window.onload = function () {
         const localVideo = document.getElementById('localVideo');
         localVideo.style.display = 'block';
         localVideo.play();
-    }, 2000); // 2-second delay
+    }, 0); // 0-second delay
 };
