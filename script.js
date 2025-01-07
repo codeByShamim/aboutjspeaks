@@ -28,6 +28,23 @@ toggleBtn.addEventListener('click', () => {
   }
 });
 
+
+// header banner
+  document.addEventListener("DOMContentLoaded", function () {
+    const bottomRightImages = document.querySelectorAll(".bottom-right-wrapper");
+
+    // Automatically fade out the bottom-right images after 3 seconds
+    setTimeout(() => {
+      bottomRightImages.forEach((wrapper) => {
+        wrapper.style.transition = "opacity 5s"; // Smooth fade-out effect
+        wrapper.style.opacity = "0"; // Fade out the image
+        setTimeout(() => {
+          wrapper.style.display = "none"; // Hide the wrapper completely after fade-out
+        }, 3000); // Wait for the fade-out transition to complete
+      });
+    }, 3000); // Wait for 3 seconds before fading out
+  });
+
 // video play btn for focus section video********************
 // Function to play a video and hide its thumbnail
 function playVideo(video, thumbnail) {
@@ -86,28 +103,4 @@ thumbnail2.addEventListener('click', function () {
   playVideo(video2, thumbnailContainer); // Play video 2 when the button is clicked
 });
 
-
-// Accordion section JavaScript*******************************************************
-var acc = document.getElementsByClassName("accordion");
-var panels = document.getElementsByClassName("panel");
-// Open the first panel by default
-acc[0].classList.add("active");
-panels[0].style.maxHeight = panels[0].scrollHeight + "px";
-for (var i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    // Close all panels and reset icons
-    for (var j = 0; j < panels.length; j++) {
-      panels[j].style.maxHeight = null;
-      acc[j].classList.remove("active");
-    }
-    // Toggle the "active" class and open/close the clicked panel************************
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
 

@@ -208,9 +208,11 @@
                <img src="./assets/header-img/joy-long-photo.webp" alt="Joy Long portrait photo">
                <img src="./assets/header-img/dr-paige-bentley-photo.webp" alt="Dr. Paige Bentley portrait photo">
                <img src="./assets/header-img/raevin-bryant-photo.webp" alt="Raevin Bryant portrait photo" class="image-gone">
-               <!-- Bottom-right overlay image -->
-               <img src="./assets/john-blakley-jspeaks-founder-host.webp"
-                  alt="John Blakley, founder and host of JSpeaks" class="bottom-right-image">
+              <!-- Bottom-right overlay image with X icon -->
+              <div class="bottom-right-wrapper">
+                 <img src="./assets/john-blakley-jspeaks-founder-host.webp" alt="John Blakley, founder and host of JSpeaks" class="bottom-right-image">
+              </div>
+
             </div>
             <!-- Banner 2 -->
             <div class="banner hidden" id="banner2">
@@ -237,12 +239,15 @@
                <img src="./assets/header-img/tameran-davenport-photo.webp" alt="Tameran Davenport portrait photo" >
                <img src="./assets/header-img/princess-rahman-photo.webp" alt="Princess Rahman portrait photo">
                <img src="./assets/header-img/mariah-king-photo.webp" alt="Mariah King portrait photo" class="image-gone">
-               <!-- Bottom-right overlay image -->
-               <img src="./assets/john-blakley-jspeaks-founder-host.webp"
-                  alt="John Blakley, founder and host of JSpeaks" class="bottom-right-image">
+              <!-- Bottom-right overlay image with X icon -->
+              <div class="bottom-right-wrapper">
+               <img src="./assets/john-blakley-jspeaks-founder-host.webp" alt="John Blakley, founder and host of JSpeaks" class="bottom-right-image">
+            </div>
             </div>
          </div>
       </div>
+
+      
 
 
  
@@ -333,7 +338,7 @@
             <div class="gallery-item">
                <img src="./assets/david-bohm-executive-director-apex-chamber-of-commerce-thumbnail.webp" alt="Introducing David Bohm: Executive Director at Apex Chamber of Commerce">
                <div class="gallery-details">
-                  <h3>Introducing David Bohm</h3>
+                  <h3>David Bohm</h3>
                   <button onclick="openModal(
                         'videoModal',
                         './assets/david-bohm-executive-director-apex-chamber-of-commerce-thumbnail.webp', 
@@ -469,7 +474,7 @@
             <div class="gallery-item">
                <img src="./assets/introducing-kramden-thumbnail.webp" alt="Introducing Kramden thumbnail">
                <div class="gallery-details">
-                  <h3>Introducing Kramden</h3>
+                  <h3>Kramden</h3>
                   <button onclick="openModal(
                         'videoModal',
                         './assets/introducing-kramden-thumbnail.webp', 
@@ -740,20 +745,8 @@
          </div>
          <div class="events-head-title">Upcoming Events & Interviews </div>
          <div id="events-collection-list">
-           
-            <!-- event -->
-            <div class="event-collection">
-               <div class="events-img">
-                  <img src="./assets/you-&-five-o-logo-for-event.webp" alt="You & Five O Logo for event" width="100%">
-               </div>
-               <div class="event-contents">
-                  <a href="https://youtu.be/npcRYoFxXe8?si=oHLYa5tIItG7htyA" class="events-title">#Huemans: A Guide to Get Home</a>
-                  <a href="https://www.youandfive-o.com/">You & Five-O</a>
-                  <p class="events-date"><i class="fa-solid fa-clock"></i> December 2024</p>
-               </div>
-            </div>
-            <!-- event -->
-            <div class="event-collection">
+             <!-- event -->
+             <div class="event-collection">
                <div class="events-img">
                   <img src="./assets/florida-devauldudley-photo-for-event.webp" alt="Florida DeVaul-Dudley photo for event" width="100%">
                </div>
@@ -763,14 +756,26 @@
                   <p class="events-date"><i class="fa-solid fa-clock"></i> January 2025</p>
                </div>
             </div>
+            <!-- event -->
+            <div class="event-collection">
+               <div class="events-img">
+                  <img src="./assets/love-is-a-parable-logo-for-event.webp" alt="Love Is A Parable Logo for event" width="100%">
+               </div>
+               <div class="event-contents">
+                  <a href="https://loveisaparable.com/" class="events-title">Love Is A Parable</a>
+                  <a href="https://www.linkedin.com/in/jdwaynegarnett/">J. Dwayne Garnett</a>
+                  <p class="events-date"><i class="fa-solid fa-clock"></i> January 2025</p>
+               </div>
+            </div>
+          
                         <!-- event -->
             <div class="event-collection">
                <div class="events-img">
-                  <img src="./assets/durham-nativity-school-logo-for-event.webp" alt="Durham Nativity School logo for event" width="100%">
+                  <img src="./assets/hope-vine-logo-for event.webp" alt="Hope And Vine logo for event" width="100%">
                </div>
                <div class="event-contents">
-                  <a href="https://www.durhamnativity.org/" class="events-title">Durham Nativity School</a>
-                  <!-- <a href="https://www.linkedin.com/in/alexus-rhone-6243104">Alexus Rhone</a> -->
+                  <a href="https://hopeandvine.org/" class="events-title">Hope And Vine</a>
+                  <a href="https://www.linkedin.com/in/rachael-smith-ohlordhelpus/">Rachael Smith</a>
                   <p class="events-date"><i class="fa-solid fa-clock"></i> January 2025</p>
                </div>
             </div>
@@ -1297,8 +1302,7 @@
             </div>
             <!-- copyright tradmark -->
             <div class="tradmark">
-               <small>Copyright <i class="fa-regular fa-copyright"></i> 2024 <a href="../index.html">About_JSpeaks </a>
-                  All Rights Reserved. </small>
+               <small>Copyright <i class="fa-regular fa-copyright"></i> 2025 <a href="./">JSpeaks  </a>|| All Rights Reserved. </small>
             </div>
          </div>
       </div>
@@ -1343,7 +1347,7 @@
       }
 
       // Switch between banners every 8 seconds
-      setInterval(toggleBanners, 5000);
+      setInterval(toggleBanners, 8000);
    </script>
    <!-- js code -->
    <script src="script.js"></script>

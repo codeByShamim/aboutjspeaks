@@ -308,18 +308,29 @@ html {
 }
 
 /* Additional overlay image */
-.bottom-right-image {
-	position: absolute;
-	bottom: 0px;
-	right: 10px;
-	max-width: 20%;
-	/* Max width to keep it responsive */
-	height: auto;
-	/* Maintain aspect ratio */
-	z-index: 0;
-	/* Ensure it stays above other content */
-	border: none !important;
+/* Additional overlay image */
+.bottom-right-wrapper {
+    position: absolute;
+    bottom: -5px;
+    right: 10px;
+    max-width: 20%;
+    height: auto;
+    z-index: 10;
+    display: inline-block; /* Ensures positioning applies to wrapper */
 }
+
+/* The bottom-right image itself */
+/* The bottom-right image itself */
+.bottom-right-image {
+    max-width: 100%; /* Responsive inside the wrapper */
+    height: auto; /* Maintain aspect ratio */
+    border: none !important;
+    transition: opacity 0.3s ease; /* Smooth fade effect on hover */
+}
+.bottom-right-image:hover {
+    opacity: 0.7; /* Slight fade effect on hover */
+}
+
 
 
 /* Media queries for responsiveness */
@@ -350,8 +361,14 @@ html {
 		/* 2 columns for mobile */
 	}
 
-	.bottom-right-image {
+	.bottom-right-wrapper {
+		
 		max-width: 40%;
+		
+	}
+
+	.bottom-right-image {
+		max-width: 200%;
 		/* Adjust for smaller screens */
 	}
 }
@@ -1062,10 +1079,13 @@ video {
 	margin-bottom: 20px;
 	color: gray;
 }
+.desc p{
+	margin-bottom: 10px !important;
+}
 
 @media screen and (max-width: 768px) {
-    .desc {
-        margin-bottom: 20px; /* Adjust this value as needed */
+    .desc p {
+        margin-bottom: 10px; /* Adjust this value as needed */
     }
 }
 
